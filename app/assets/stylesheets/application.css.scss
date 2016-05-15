@@ -13,26 +13,27 @@
  *= require_tree .
  *= require_self
  */
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display|Muli:300,400);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 /* General styles */
 
+
 body {
 	background-color: #fff;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;	
 }
 
 .btn-custom {
 	background-color: #fff;
 	color: #0a8fd5;
-	font-family: 'Muli', sans-serif; 
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	border-radius: 8px;
 	padding: 10px 20px;
@@ -54,8 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Navbar styles */
 
 .navbar {
-	font-family: 'Muli', sans-serif;
-	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
 }
 
 .navbar-default {
@@ -99,16 +99,19 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 10px;
 	margin-left: 10px;
 	padding: 1.4em 1.4em;
-	height: 150px;
 	border-bottom: 4px solid #0a8fd5;
 
 	.message-title {
 		font-size: 1.5em;
-		font-family: 'Muli', sans-serif;
+		font-family: 'Lato', sans-serif;
 		font-weight: 300;
 		margin-top: 0;
 		color: white;
 		margin-bottom: 25px;
+	}
+	
+	.message-description {
+		color: white;
 	}
 
 	.btn-custom {
@@ -129,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 2.0em 1.5em;
 	border-bottom: 4px solid #0a8fd5;
 	color: #fff;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 
 	h2 {
@@ -142,17 +145,17 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 50px;
 	}
 
-	.message-posted-by {
-		color: #eee;
-		font-size: 0.9em;
-	}
-
 	.reply-to-msg {
 		margin-top: 50px;
 	}
 
 }
 
+.message-posted-by {
+		color: #eee;
+		font-size: 0.9em;
+	}
+	
 
 /* Comment styles */
 
@@ -161,20 +164,17 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 15px;
 	padding-bottom: 15px;
 
-	.comment-content {
-		font-size: 1.25em;
-	}	
 
 	.comment-posted-by {
 		color: #eee;
 		font-size: 0.8em;
 	}
+}
 
-	.links {
-		margin-top: 15px;
-		a {
-			color: #0a8fd5;
-			margin-right: 15px;
-		}
+.links {
+	margin-top: 15px;
+	a {
+		color: #0a8fd5;
+		margin-right: 15px;
 	}
 }
