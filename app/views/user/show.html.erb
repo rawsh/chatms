@@ -1,0 +1,25 @@
+<% if user_signed_in? %>
+    <h2><%= @user.username %></h2>
+    <br />
+    <h4><%= @user.email %></h4>
+    <br />
+    <% if @messages.where(user_id: @user.id).length != 0 %>
+        <h4><%= @user.username %>'s posts:</h4>
+        <br />
+    	<% @messages.each do |message| %>
+    	    <% next if message.user.id != @user.id %>
+    		<div class="col-md-8">
+    			<div class="message">
+    				<h2 class="message-title"><%= message.title %></h2>
+    				<p class="message-description"><%= message.description %></p>
+    				<hr />
+    				<%= link_to image_tag("white.png", :width => "30px"), message %>
+    			</div>
+    		</div>
+    	<% end %>
+    <% else %>
+        <h4><%= @user.username %> has no posts. </h4>
+    <% end %>
+<% else %>
+	<h3>Please log in to view this user.</h3>
+<% end %>
