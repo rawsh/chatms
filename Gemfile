@@ -1,19 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'jquery-caret-rails'
 gem 'jquery-atwho-rails'
-gem 'i18n'
-gem 'rails'
-gem 'sass-rails'
-gem 'simple_form'
-gem 'bootstrap-sass'
-gem 'devise'
-gem 'uglifier'
-gem 'coffee-rails'
+gem 'rails', '4.2.1'
+gem 'sass-rails', '~> 5.0'
+gem 'simple_form', '~> 3.1.0'
+gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'devise', '~> 3.4.1'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder'
-gem 'sdoc', group: :doc
+gem 'jbuilder', '~> 2.0'
+gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'sqlite3'
@@ -21,7 +19,7 @@ group :development, :test do
   gem 'web-console'
   gem 'spring'
 end
-
+ 
 group :production do
   gem 'heroku-deflater'
   gem 'pg'

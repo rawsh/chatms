@@ -14,10 +14,8 @@
 				<%= link_to "Delete", message_path(@message), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
 			<% end %>
 		</div>
-
-		<h3 class="comment-section-header">Comments:</h3>
 		<!-- renders the _comment.html.erb partial file. -->
-		<p><%= render @message.comments %></p>
+		<p id="comments"><%= render @message.comments %></p>
 
 		<h3 class="reply-to-msg">Reply to Message:</h3>
 		<!-- renders the comments form -->
