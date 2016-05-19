@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "paperclip", "~> 5.0.0.beta1"
 gem 'jquery-atwho-rails'
 gem 'rails', '4.2.1'
 gem 'sass-rails', '~> 5.0'

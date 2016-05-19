@@ -5,7 +5,11 @@
 		
 		<p class="message-desc"><%= @message.description %></p>
 		<!-- Add a Posted By: username at timestamp. -->
-		
+		<%= 
+		if @message.image?
+			image_tag @message.image.url 
+		end
+		%>
 		<!-- Add a conditional so that the 'edit' and 'destroy' links only appear for the user who created the message. -->
 		<div class="links btn-group">
 			<%= link_to "Back", root_path, class: "btn btn-default" %>

@@ -1,6 +1,16 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :port           => 587,
+    :address        => 'in-v3.mailjet.com.',
+    :user_name      => '5930706e321cdcade69d8f9c47c6c03f',
+    :password       => '8c60403b86ff93e8f5b937d8de84c885',
+    :authentication => :plain,
+  }
+  
+  config.action_mailer.default_url_options = { :host => 'chat-rawas.c9users.io' }
+  
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.

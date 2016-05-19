@@ -5,6 +5,11 @@
 				<h2 class="message-title"><%= link_to image_tag("white.png", :width => "25px"), message %> 	&nbsp; <%= message.title %></h2>
 				<p class="message-posted-by">posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
 				<p class="message-description"><%= message.description %></p>
+				<%= 
+				if message.image?
+					image_tag message.image.url 
+				end
+				%>
 				<% if message.user_id == current_user.id %>
 					<div class="links">
 						<%= link_to "Edit", edit_message_path(message) %>
