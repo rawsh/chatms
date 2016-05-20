@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
 	<div class="mcbox">
 	<% @messages.where(:article_type => "Idea").each do |message| %>
-		<div class="post col-md-4">
+		<div class="post col-md-6">
 			<div class="message">
 				<p class="message-description"><%= message.description %></p>
 				<p class="message-posted-by">posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
