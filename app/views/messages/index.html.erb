@@ -13,7 +13,7 @@
 				<p class="message-description"><%= message.description %></p>
 				<% end %>
 				<%= if message.image?
-					image_tag(message.image.url, style: 'max-width:90%;' )
+					image_tag(message.image.url, style: 'max-width:100%;' )
 				end %>
 				<% if message.user_id == current_user.id %>
 					<div class="links">
