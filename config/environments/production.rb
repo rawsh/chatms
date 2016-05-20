@@ -8,6 +8,8 @@ Rails.application.configure do
       secret_access_key: ENV.fetch('F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh0ceT3Uku'),
     }
   }
+  config.asset_sync.aws_access_key = ENV['AKIAISXTJMLA26YARBCQD']
+  config.asset_sync.aws_access_secret = ENV['F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh0ceT3Uku']
   # Settings specified here will take precedence over those in config/application.rb.
   config.consider_all_requests_local = true
   # Code is not reloaded between requests.

@@ -1018,4 +1018,297 @@ remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.
 remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'[K
 remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'[K
 remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'[K
-remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/g
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/config/environment.rb:5:in `<top (required)>'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:328:in `require_environment!'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:457:in `block in run_tasks_blocks'[K
+remote:        /tmp/build_70dc661c3f880038dcd83a81bc3f68e6/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.4/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'[K
+remote:        Tasks: TOP => environment[K
+remote:        (See full trace by running task with --trace)[K
+remote:  ![K
+remote:  !     Precompiling assets failed.[K
+remote:  ![K
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app[K
+remote: 
+remote: Verifying deploy...[K
+remote: 
+remote: !	Push rejected to chatms.[K
+remote: 
+To https://git.heroku.com/chatms.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/chatms.git'
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ 
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git push herokucommit -m "test"add .[Kbundle updateinstallheroku local:run rails runner "puts ENV['S3_BUCKET']"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat .env[Kheroku local:run rails runner "puts ENV['S3_BUCKET']"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbundle install[Kheroku local:run rails runner "puts ENV['S3_BUCKET']"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat .env[Kheroku config:set S3_BUCKET_NAME=chatmsAWS_ACCESS_KEY_ID=AKIAISXTJMLA26YARBCQ AWS_SECRET_ACCESS_KEY=F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh00ceT3Uku
+Setting [32mAWS_ACCESS_KEY_ID[39m, [32mAWS_SECRET_ACCESS_KEY[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[2K[1GSetting [32mAWS_ACCESS_KEY_ID[39m, [32mAWS_SECRET_ACCESS_KEY[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv20[22m[39m
+[32mAWS_ACCESS_KEY_ID[39m:     AKIAISXTJMLA26YARBCQ
+[32mAWS_SECRET_ACCESS_KEY[39m: F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh0ceT3Uku
+[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git as[Kdd .
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git commit -m "up"
+[master 8140a29] up
+ 2 files changed, 437 insertions(+), 1 deletion(-)
+ create mode 100644 config/aws.yml
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git push heroku master
+Counting objects: 22, done.
+Delta compression using up to 8 threads.
+Compressing objects:   4% (1/22)   Compressing objects:   9% (2/22)   Compressing objects:  13% (3/22)   Compressing objects:  18% (4/22)   Compressing objects:  22% (5/22)   Compressing objects:  27% (6/22)   Compressing objects:  31% (7/22)   Compressing objects:  36% (8/22)   Compressing objects:  40% (9/22)   Compressing objects:  45% (10/22)   Compressing objects:  50% (11/22)   Compressing objects:  54% (12/22)   Compressing objects:  59% (13/22)   Compressing objects:  63% (14/22)   Compressing objects:  68% (15/22)   Compressing objects:  72% (16/22)   Compressing objects:  77% (17/22)   Compressing objects:  81% (18/22)   Compressing objects:  86% (19/22)   Compressing objects:  90% (20/22)   Compressing objects:  95% (21/22)   Compressing objects: 100% (22/22)   Compressing objects: 100% (22/22), done.
+Writing objects:   4% (1/22)   Writing objects:   9% (2/22)   Writing objects:  13% (3/22)   Writing objects:  18% (4/22)   Writing objects:  22% (5/22)   Writing objects:  27% (6/22)   Writing objects:  31% (7/22)   Writing objects:  36% (8/22)   Writing objects:  40% (9/22)   Writing objects:  45% (10/22)   Writing objects:  50% (11/22)   Writing objects:  54% (12/22)   Writing objects:  59% (13/22)   Writing objects:  63% (14/22)   Writing objects:  68% (15/22)   Writing objects:  72% (16/22)   Writing objects:  77% (17/22)   Writing objects:  81% (18/22)   Writing objects:  86% (19/22)   Writing objects:  90% (20/22)   Writing objects:  95% (21/22)   Writing objects: 100% (22/22)   Writing objects: 100% (22/22), 7.86 KiB | 0 bytes/s, done.
+Total 22 (delta 14), reused 0 (delta 0)
+remote: Compressing source files... done.[K
+remote: Building source:[K
+remote: 
+remote: -----> Using set buildpack heroku/ruby[K
+remote: -----> Ruby app detected[K
+remote: -----> Compiling Ruby/Rails[K
+remote: -----> Using Ruby version: ruby-2.2.4[K
+remote: -----> Installing dependencies using bundler 1.11.2[K
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment[K
+remote:        Warning: the running version of Bundler is older than the version that created the lockfile. We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.[K
+remote:        Fetching gem metadata from https://rubygems.org/.............[K
+remote:        Fetching version metadata from https://rubygems.org/...[K
+remote:        Fetching dependency metadata from https://rubygems.org/..[K
+remote:        Using i18n 0.7.0[K
+remote:        Using minitest 5.9.0[K
+remote:        Using thread_safe 0.3.5[K
+remote:        Using json 1.8.3[K
+remote:        Using rake 11.1.2[K
+remote:        Using builder 3.2.2[K
+remote:        Using erubis 2.7.0[K
+remote:        Using mini_portile2 2.0.0[K
+remote:        Using rack 1.6.4[K
+remote:        Using mime-types-data 3.2016.0221[K
+remote:        Using arel 6.0.3[K
+remote:        Using bcrypt 3.1.11[K
+remote:        Using sass 3.4.22[K
+remote:        Using mimemagic 0.3.1[K
+remote:        Using mini_magick 4.5.1[K
+remote:        Using remotipart 1.2.1[K
+remote:        Using coffee-script-source 1.10.0[K
+remote:        Using thor 0.19.1[K
+remote:        Using commonjs 0.2.7[K
+remote:        Using concurrent-ruby 1.0.2[K
+remote:        Using orm_adapter 0.5.0[K
+remote:        Using multi_json 1.12.1[K
+remote:        Using jquery-atwho-rails 1.3.2[K
+remote:        Using tilt 2.0.4[K
+remote:        Using libv8 3.16.14.15[K
+remote:        Using pg 0.18.4[K
+remote:        Using bundler 1.11.2[K
+remote:        Using ref 2.0.0[K
+remote:        Using rdoc 4.2.2[K
+remote:        Using tzinfo 1.2.2[K
+remote:        Using nokogiri 1.6.7.2[K
+remote:        Using mime-types 3.0[K
+remote:        Using rack-test 0.6.3[K
+remote:        Using warden 1.2.6[K
+remote:        Using heroku-deflater 0.6.2[K
+remote:        Using less 2.6.0[K
+remote:        Using sprockets 3.6.0[K
+remote:        Using therubyracer 0.12.2[K
+remote:        Using sdoc 0.4.1[K
+remote:        Using activesupport 4.2.1[K
+remote:        Using loofah 2.0.3[K
+remote:        Using mail 2.6.4[K
+remote:        Using rails-deprecated_sanitizer 1.0.3[K
+remote:        Using globalid 0.3.6[K
+remote:        Using activemodel 4.2.1[K
+remote:        Using climate_control 0.0.3[K
+remote:        Using jbuilder 2.4.1[K
+remote:        Using rails-html-sanitizer 1.0.3[K
+remote:        Using rails-dom-testing 1.0.7[K
+remote:        Using activejob 4.2.1[K
+remote:        Using activerecord 4.2.1[K
+remote:        Using carrierwave 0.11.2[K
+remote:        Using cocaine 0.5.8[K
+remote:        Using actionview 4.2.1[K
+remote:        Using bootsy 2.2.2[K
+remote:        Using paperclip 5.0.0.beta2[K
+remote:        Using actionpack 4.2.1[K
+remote:        Using actionmailer 4.2.1[K
+remote:        Using railties 4.2.1[K
+remote:        Using less-rails 2.7.1[K
+remote:        Using sprockets-rails 3.0.4[K
+remote:        Using simple_form 3.1.1[K
+remote:        Using responders 2.2.0[K
+remote:        Using jquery-rails 4.1.1[K
+remote:        Using masonry-rails 0.2.4[K
+remote:        Using rails 4.2.1[K
+remote:        Using sass-rails 5.0.4[K
+remote:        Using devise 3.4.1[K
+remote:        Installing json_pure 1.8.3[K
+remote:        Installing execjs 2.7.0[K
+remote:        Using autoprefixer-rails 6.3.6.1[K
+remote:        Using coffee-script 2.4.1[K
+remote:        Using twitter-bootswatch-rails 3.3.4.0[K
+remote:        Using uglifier 3.0.0[K
+remote:        Using bootstrap-sass 3.3.4.1[K
+remote:        Using coffee-rails 4.1.1[K
+remote:        Using twitter-bootswatch-rails-helpers 3.3.2.0[K
+remote:        Using turbolinks 2.5.3[K
+remote:        Installing jmespath 1.2.4[K
+remote:        Installing aws-sdk-core 2.3.7[K
+remote:        Installing aws-sdk-resources 2.3.7[K
+remote:        Installing aws-sdk 2.3.7[K
+remote:        Bundle complete! 25 Gemfile dependencies, 82 gems now installed.[K
+remote:        Gems in the groups development and test were not installed.[K
+remote:        Bundled gems are installed into ./vendor/bundle.[K
+remote:        Bundle completed (7.58s)[K
+remote:        Cleaning up the bundler cache.[K
+remote:        Warning: the running version of Bundler is older than the version that created the lockfile. We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.[K
+remote:        Removing execjs (2.6.0)[K
+remote: -----> Preparing app for Rails asset pipeline[K
+remote:        Running: rake assets:precompile[K
+remote:        rake aborted![K
+remote:        KeyError: key not found: "AKIAISXTJMLA26YARBCQ"[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/config/environments/production.rb:7:in `fetch'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/config/environments/production.rb:7:in `block in <top (required)>'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/railtie.rb:210:in `instance_eval'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/railtie.rb:210:in `configure'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/config/environments/production.rb:1:in `<top (required)>'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:597:in `each'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:597:in `block in <class:Engine>'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/config/environment.rb:5:in `<top (required)>'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:328:in `require_environment!'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:457:in `block in run_tasks_blocks'[K
+remote:        /tmp/build_4c6e28508195485a22f10174f7c7569b/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.4/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'[K
+remote:        Tasks: TOP => environment[K
+remote:        (See full trace by running task with --trace)[K
+remote:  ![K
+remote:  !     Precompiling assets failed.[K
+remote:  ![K
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app[K
+remote: 
+remote: Verifying deploy...[K
+remote: 
+remote: !	Push rejected to chatms.[K
+remote: 
+To https://git.heroku.com/chatms.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/chatms.git'
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ rake assets:precompile
+I, [2016-05-20T15:32:19.383523 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/link-c6de1f6486c9d4315b16b7428f006a2126cab228f572d2caaf0cd819537f7b2f.png
+I, [2016-05-20T15:32:19.387362 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/plus-7935fc8a4f688feebccfa8def46b24681f11ca201afca5de829782662ec70cbb.png
+I, [2016-05-20T15:32:19.389990 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/white-3dc94cd155cd82837899ec85d8cce3273126633715046510c263a2cb1c5d9d5a.png
+I, [2016-05-20T15:32:19.461271 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/application-a5879123198aad2e1e521152235568d36bc4b8c9a7bb5e171a22bb225e2f4cdc.js
+I, [2016-05-20T15:32:19.461545 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/application-a5879123198aad2e1e521152235568d36bc4b8c9a7bb5e171a22bb225e2f4cdc.js.gz
+I, [2016-05-20T15:32:19.650872 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/application-e408a1760f8be91b31ce72c8a0408d8a1a05a554c22112a24dc8b07b5981c3ee.css
+I, [2016-05-20T15:32:19.651284 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/application-e408a1760f8be91b31ce72c8a0408d8a1a05a554c22112a24dc8b07b5981c3ee.css.gz
+I, [2016-05-20T15:32:19.653931 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/twitter/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot
+I, [2016-05-20T15:32:19.657571 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/twitter/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot.gz
+I, [2016-05-20T15:32:19.659021 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/twitter/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2
+I, [2016-05-20T15:32:19.662170 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/twitter/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff
+I, [2016-05-20T15:32:19.663497 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/twitter/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf
+I, [2016-05-20T15:32:19.667188 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/twitter/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf.gz
+I, [2016-05-20T15:32:19.668631 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/twitter/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg
+I, [2016-05-20T15:32:19.672098 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/twitter/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz
+I, [2016-05-20T15:32:19.679015 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/twitter/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz
+I, [2016-05-20T15:32:19.719527 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot
+I, [2016-05-20T15:32:19.723364 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot.gz
+I, [2016-05-20T15:32:19.726747 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg
+I, [2016-05-20T15:32:19.731453 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz
+I, [2016-05-20T15:32:19.734148 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf
+I, [2016-05-20T15:32:19.737469 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf.gz
+I, [2016-05-20T15:32:19.741106 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff
+I, [2016-05-20T15:32:19.744324 #4859]  INFO -- : Writing /home/ubuntu/workspace/public/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git s[Kaddd [K[K .
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config
+[90m=== [39m[1mchatms Config Vars[22m
+[32mAWS_ACCESS_KEY_ID[39m:        AKIAISXTJMLA26YARBCQ
+[32mAWS_SECRET_ACCESS_KEY[39m:    F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh0ceT3Uku
+[32mDATABASE_URL[39m:             postgres://banezndygrvctr:y7i3zzxlw1aChdsQ3Ikt6m7F7M@ec2-54-243-47-83.compute-1.amazonaws.com:5432/da3i2s9skvqak7
+[32mLANG[39m:                     en_US.UTF-8
+[32mRACK_ENV[39m:                 production
+[32mRAILS_ENV[39m:                production
+[32mRAILS_SERVE_STATIC_FILES[39m: enabled
+[32mS3_BUCKET_NAME[39m:           chatms
+[32mSECRET_KEY_BASE[39m:          676091af1cf082814ad64547efaad08cc2fcc210fb8663d24d3569a530931f50644d4c152608b2363a117c6b65bf4f16afd3883c7a4117894a185176e809d664
+[32mchatms[39m:                   appname-assets
+[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku run rake assets:precompile --app my-app-name[K[K[K[K[K[K[K[K[K[K[Kchatms
+Running [36m[1mrake assets:precompile[22m[39m on [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[2K[1GRunning [36m[1mrake assets:precompile[22m[39m on [35m⬢ chatms[39m... starting, run.2473  [35m⣾[39m[35m⣽[39m[2K[1GRunning [36m[1mrake assets:precompile[22m[39m on [35m⬢ chatms[39m... connecting, run.2473  [35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[2K[1GRunning [36m[1mrake assets:precompile[22m[39m on [35m⬢ chatms[39m... up, run.2473  [2K[1GRunning [36m[1mrake assets:precompile[22m[39m on [35m⬢ chatms[39m... up, run.2473[?25h
+[2K[1G  [2K[1G[2K[1G[?25h[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config
+[90m=== [39m[1mchatms Config Vars[22m
+[32mAWS_ACCESS_KEY_ID[39m:        AKIAISXTJMLA26YARBCQ
+[32mAWS_SECRET_ACCESS_KEY[39m:    F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh0ceT3Uku
+[32mDATABASE_URL[39m:             postgres://banezndygrvctr:y7i3zzxlw1aChdsQ3Ikt6m7F7M@ec2-54-243-47-83.compute-1.amazonaws.com:5432/da3i2s9skvqak7
+[32mLANG[39m:                     en_US.UTF-8
+[32mRACK_ENV[39m:                 production
+[32mRAILS_ENV[39m:                production
+[32mRAILS_SERVE_STATIC_FILES[39m: enabled
+[32mS3_BUCKET_NAME[39m:           chatms
+[32mSECRET_KEY_BASE[39m:          676091af1cf082814ad64547efaad08cc2fcc210fb8663d24d3569a530931f50644d4c152608b2363a117c6b65bf4f16afd3883c7a4117894a185176e809d664
+[32mchatms[39m:                   appname-assets
+[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku [K[K[K[K[Kroku configrun rake assets:precompile --app chatms[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cconfig[K[4Pgit add .rake assets:precompilegit push heroku master[4Pcommit -m "up"[K[4Padd .heroku config:set AWS_ACCESS_KEY_ID=AKIAISXTJMLA26YARBCQ AWS_SECRET_ACCESS_KEY=F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh00ceT3UkuM[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git push heroku[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku config:set AWS_ACCESS_KEY_ID=AKIAISXTJMLA26YARBCQ AWS_SECRET_ACCESS_KEY=F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh00ceT3UkuM[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git add .[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku config:set AWS_ACCESS_KEY_ID=AKIAISXTJMLA26YARBCQ AWS_SECRET_ACCESS_KEY=F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh00ceT3Uku[K[K[K[K[K[K[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[
