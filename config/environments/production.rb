@@ -4,8 +4,8 @@ Rails.application.configure do
     storage: :s3,
     s3_credentials: {
       bucket: ENV.fetch('chatms'),
-      access_key_id: ENV.fetch('AKIAJNTONBHU7ZQTID5A'),
-      secret_access_key: ENV.fetch('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'),
+      access_key_id: ENV.fetch('AKIAISXTJMLA26YARBCQ'),
+      secret_access_key: ENV.fetch('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'),
     }
   }
   # Settings specified here will take precedence over those in config/application.rb.

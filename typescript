@@ -319,4 +319,271 @@ remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/config/environments/p
 remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
 remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'[K
 remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'[K
-r
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:597:in `each'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:597:in `block in <class:Engine>'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/config/environment.rb:5:in `<top (required)>'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:328:in `require_environment!'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:457:in `block in run_tasks_blocks'[K
+remote:        /tmp/build_28641eaf5ed265cb5870cf35ca54814f/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.4/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'[K
+remote:        Tasks: TOP => environment[K
+remote:        (See full trace by running task with --trace)[K
+remote:  ![K
+remote:  !     Precompiling assets failed.[K
+remote:  ![K
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app[K
+remote: 
+remote: Verifying deploy...[K
+remote: 
+remote: !	Push rejected to chatms.[K
+remote: 
+To https://git.heroku.com/chatms.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/chatms.git'
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git add .
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git commit -m "all"
+[master 69224e8] all
+ 1 file changed, 130 insertions(+), 1 deletion(-)
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git commit -m "all"
+On branch master
+Your branch is ahead of 'origin/master' by 15 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git add .
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git add .commit -m "all"
+On branch master
+Your branch is ahead of 'origin/master' by 15 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+	[31mmodified:   typescript[m
+
+no changes added to commit
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git push heroku
+Counting objects: 11, done.
+Delta compression using up to 8 threads.
+Compressing objects:   9% (1/11)   Compressing objects:  18% (2/11)   Compressing objects:  27% (3/11)   Compressing objects:  36% (4/11)   Compressing objects:  45% (5/11)   Compressing objects:  54% (6/11)   Compressing objects:  63% (7/11)   Compressing objects:  72% (8/11)   Compressing objects:  81% (9/11)   Compressing objects:  90% (10/11)   Compressing objects: 100% (11/11)   Compressing objects: 100% (11/11), done.
+Writing objects:   9% (1/11)   Writing objects:  18% (2/11)   Writing objects:  27% (3/11)   Writing objects:  36% (4/11)   Writing objects:  45% (5/11)   Writing objects:  54% (6/11)   Writing objects:  63% (7/11)   Writing objects:  72% (8/11)   Writing objects:  81% (9/11)   Writing objects:  90% (10/11)   Writing objects: 100% (11/11)   Writing objects: 100% (11/11), 4.12 KiB | 0 bytes/s, done.
+Total 11 (delta 7), reused 0 (delta 0)
+remote: Compressing source files... done.[K
+remote: Building source:[K
+remote: 
+remote: -----> Using set buildpack heroku/ruby[K
+remote: -----> Ruby app detected[K
+remote: -----> Compiling Ruby/Rails[K
+remote: -----> Using Ruby version: ruby-2.2.4[K
+remote: -----> Installing dependencies using bundler 1.11.2[K
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment[K
+remote:        Warning: the running version of Bundler is older than the version that created the lockfile. We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.[K
+remote:        Fetching gem metadata from https://rubygems.org/.............[K
+remote:        Fetching version metadata from https://rubygems.org/...[K
+remote:        Fetching dependency metadata from https://rubygems.org/..[K
+remote:        Using rake 11.1.2[K
+remote:        Using i18n 0.7.0[K
+remote:        Using json 1.8.3[K
+remote:        Using minitest 5.9.0[K
+remote:        Using thread_safe 0.3.5[K
+remote:        Using builder 3.2.2[K
+remote:        Using erubis 2.7.0[K
+remote:        Using mini_portile2 2.0.0[K
+remote:        Using rack 1.6.4[K
+remote:        Using mime-types-data 3.2016.0221[K
+remote:        Using arel 6.0.3[K
+remote:        Using bcrypt 3.1.11[K
+remote:        Using sass 3.4.22[K
+remote:        Using mimemagic 0.3.1[K
+remote:        Using mini_magick 4.5.1[K
+remote:        Using remotipart 1.2.1[K
+remote:        Using coffee-script-source 1.10.0[K
+remote:        Using thor 0.19.1[K
+remote:        Using commonjs 0.2.7[K
+remote:        Using concurrent-ruby 1.0.2[K
+remote:        Using orm_adapter 0.5.0[K
+remote:        Using multi_json 1.12.1[K
+remote:        Using jquery-atwho-rails 1.3.2[K
+remote:        Using tilt 2.0.4[K
+remote:        Using libv8 3.16.14.15[K
+remote:        Using pg 0.18.4[K
+remote:        Using bundler 1.11.2[K
+remote:        Using ref 2.0.0[K
+remote:        Using rdoc 4.2.2[K
+remote:        Using tzinfo 1.2.2[K
+remote:        Using mime-types 3.0[K
+remote:        Using rack-test 0.6.3[K
+remote:        Using warden 1.2.6[K
+remote:        Using heroku-deflater 0.6.2[K
+remote:        Using nokogiri 1.6.7.2[K
+remote:        Using less 2.6.0[K
+remote:        Using sprockets 3.6.0[K
+remote:        Using therubyracer 0.12.2[K
+remote:        Using sdoc 0.4.1[K
+remote:        Using activesupport 4.2.1[K
+remote:        Using mail 2.6.4[K
+remote:        Using loofah 2.0.3[K
+remote:        Using rails-deprecated_sanitizer 1.0.3[K
+remote:        Using globalid 0.3.6[K
+remote:        Using activemodel 4.2.1[K
+remote:        Using climate_control 0.0.3[K
+remote:        Using jbuilder 2.4.1[K
+remote:        Using rails-html-sanitizer 1.0.3[K
+remote:        Using rails-dom-testing 1.0.7[K
+remote:        Using activejob 4.2.1[K
+remote:        Using activerecord 4.2.1[K
+remote:        Using carrierwave 0.11.2[K
+remote:        Using cocaine 0.5.8[K
+remote:        Using actionview 4.2.1[K
+remote:        Using bootsy 2.2.2[K
+remote:        Using paperclip 5.0.0.beta2[K
+remote:        Using actionpack 4.2.1[K
+remote:        Using actionmailer 4.2.1[K
+remote:        Using railties 4.2.1[K
+remote:        Using less-rails 2.7.1[K
+remote:        Using sprockets-rails 3.0.4[K
+remote:        Using simple_form 3.1.1[K
+remote:        Using responders 2.2.0[K
+remote:        Using jquery-rails 4.1.1[K
+remote:        Using masonry-rails 0.2.4[K
+remote:        Using rails 4.2.1[K
+remote:        Using sass-rails 5.0.4[K
+remote:        Using devise 3.4.1[K
+remote:        Installing execjs 2.7.0[K
+remote:        Using autoprefixer-rails 6.3.6.1[K
+remote:        Using coffee-script 2.4.1[K
+remote:        Using twitter-bootswatch-rails 3.3.4.0[K
+remote:        Using uglifier 3.0.0[K
+remote:        Using bootstrap-sass 3.3.4.1[K
+remote:        Using coffee-rails 4.1.1[K
+remote:        Using twitter-bootswatch-rails-helpers 3.3.2.0[K
+remote:        Using turbolinks 2.5.3[K
+remote:        Installing json_pure 1.8.3[K
+remote:        Installing jmespath 1.2.4[K
+remote:        Installing aws-sdk-core 2.3.7[K
+remote:        Installing aws-sdk-resources 2.3.7[K
+remote:        Installing aws-sdk 2.3.7[K
+remote:        Bundle complete! 25 Gemfile dependencies, 82 gems now installed.[K
+remote:        Gems in the groups development and test were not installed.[K
+remote:        Bundled gems are installed into ./vendor/bundle.[K
+remote:        Bundle completed (12.64s)[K
+remote:        Cleaning up the bundler cache.[K
+remote:        Warning: the running version of Bundler is older than the version that created the lockfile. We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.[K
+remote:        Removing execjs (2.6.0)[K
+remote: -----> Preparing app for Rails asset pipeline[K
+remote:        Running: rake assets:precompile[K
+remote:        rake aborted![K
+remote:        KeyError: key not found: "AKIAJNTONBHU7ZQTID5A"[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/config/environments/production.rb:7:in `fetch'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/config/environments/production.rb:7:in `block in <top (required)>'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/railtie.rb:210:in `instance_eval'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/railtie.rb:210:in `configure'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/config/environments/production.rb:1:in `<top (required)>'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:597:in `each'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:597:in `block in <class:Engine>'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/config/environment.rb:5:in `<top (required)>'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:328:in `require_environment!'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:457:in `block in run_tasks_blocks'[K
+remote:        /tmp/build_1d404e8e5739d9b91ce1bcff93b58f5e/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.4/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'[K
+remote:        Tasks: TOP => environment[K
+remote:        (See full trace by running task with --trace)[K
+remote:  ![K
+remote:  !     Precompiling assets failed.[K
+remote:  ![K
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app[K
+remote: 
+remote: Verifying deploy...[K
+remote: 
+remote: !	Push rejected to chatms.[K
+remote: 
+To https://git.heroku.com/chatms.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/chatms.git'
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config:set AWS_ACCESS_KEY_ID=xxx AWS_SECRET_ACCESS_KEY=yyy[1P AWS_SECRET_ACCESS_KEY=yyy[1P AWS_SECRET_ACCESS_KEY=yyy[1P AWS_SECRET_ACCESS_KEY=yyyA AWS_SECRET_ACCESS_KEY=yyyK AWS_SECRET_ACCESS_KEY=yyyI AWS_SECRET_ACCESS_KEY=yyyA AWS_SECRET_ACCESS_KEY=yyyI AWS_SECRET_ACCESS_KEY=yyyS AWS_SECRET_ACCESS_KEY=yyyX AWS_SECRET_ACCESS_KEY=yyyT AWS_SECRET_ACCESS_KEY=yyyJ AWS_SECRET_ACCESS_KEY=yyyM AWS_SECRET_ACCESS_KEY=yyyL AWS_SECRET_ACCESS_KEY=yyyA AWS_SECRET_ACCESS_KEY=yyy2 AWS_SECRET_ACCESS_KEY=yyy6 AWS_SECRET_ACCESS_KEY=yyyY AWS_SECRET_ACCESS_KEY=yyyA AWS_SECRET_ACCESS_KEY=yyyR AWS_SECRET_ACCESS_KEY=yyyB AWS_SECRET_ACCESS_KEY=yyyC AWS_SECRET_ACCESS_KEY=yyyQ AWS_SECRET_ACCESS_KEY=yyy[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[KF3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh 0ceT3Uku
+Setting [32mAWS_ACCESS_KEY_ID[39m, [32mAWS_SECRET_ACCESS_KEY[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[2K[1GSetting [32mAWS_ACCESS_KEY_ID[39m, [32mAWS_SECRET_ACCESS_KEY[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv20[22m[39m
+[32mAWS_ACCESS_KEY_ID[39m:     AKIAISXTJMLA26YARBCQ
+[32mAWS_SECRET_ACCESS_KEY[39m: F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh0ceT3Uku
+[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config:set S3_BUCKET_NAME=appname-assets[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[Kchatms
+Setting [32mS3_BUCKET_NAME[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[2K[1GSetting [32mS3_BUCKET_NAME[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv20[22m[39m
+[32mS3_BUCKET_NAME[39m: chatms
+[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ cat .env
+cat: .env: No such file or directory
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $  heroku local:run rails runner "puts ENV['S3_BUCKET']"[1P
+[33m[WARN] No ENV file found[0m
+^C[33m[WARN] Interrupted by User[0m
+[36m[DONE] Killing all processes with signal  SIGINT[0m
+Running via Spring preloader in process 4242
+/usr/local/rvm/gems/ruby-2.3.0/gems/spring-1.7.1/lib/spring/application.rb:172:in `block (2 levels) in serve': Interrupt
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/spring-1.7.1/lib/spring/application.rb:172:in `each'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/spring-1.7.1/lib/spring/application.rb:172:in `block in serve'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `fork'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `serve'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/spring-1.7.1/lib/spring/application.rb:131:in `block in run'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `loop'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `run'
+	from /usr/local/rvm/gems/ruby-2.3.0/gems/spring-1.7.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ bundle install
+Using rake 11.1.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.9.0
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using rack 1.6.4
+Using mime-types-data 3.2016.0221
+Using arel 6.0.3
+Using execjs 2.7.0
+Using json_pure 1.8.3
+Using bcrypt 3.1.11
+Using sass 3.4.22
+Using mimemagic 0.3.1
+Using mini_magick 4.5.1
+Using remotipart 1.2.1
+Using byebug 9.0.4
+Using coffee-script-source 1.10.0
+Using thor 0.19.1
+Using commonjs 0.2.7
+Using concurrent-ruby 1.0.2
+Using debug_inspector 0.0.2
+Using orm_adapter 0.5.0
+Using multi_json 1.12.1
+Using jquery-atwho-rails 1.3.2
+Using tilt 2.0.4
+Using libv8 3.16.14.15
+Using bundler 1.12.3
+Using ref 2.0.0
+Using spring 1.7.1
+Using sqlite3 1.3.11
+Using rdoc 4.2.2
+Using
