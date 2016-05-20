@@ -4,7 +4,7 @@
 		<div class="post col-md-4">
 			<div class="message">
 				<% if message.article_type == "Idea" %>
-				<p class="message-description"><%= message.description %></p>
+				<p class="message-description"><%= link_to image_tag("white.png", :width => "25px"), message %> 	&nbsp;  <%= message.description %></p>
 				<p class="message-posted-by">posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
 				
 				<% else %>	
