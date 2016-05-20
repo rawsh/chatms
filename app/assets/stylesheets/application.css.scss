@@ -12,51 +12,27 @@
  *
  *= require_tree .
  *= require_self
+ *= require 'masonry/basic'
+ *= require 'masonry/centered'
+ *= require 'masonry/fluid'
+ *= require 'masonry/gutters'
+ *= require 'masonry/infinitescroll'
+ *= require 'masonry/right-to-left'
+ *= require 'masonry/transitions'
  */
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
 
 /* General styles */
 
 
 body {
 	background-color: #fff;
-	font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Lato', sans-serif;
 	font-weight: 300;	
 }
 
-.btn-custom {
-	background-color: #fff;
-	color: #0a8fd5;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	border-radius: 8px;
-	padding: 10px 20px;
-	&:hover {
-		color: #383838;
-		transition: 0.5s;
-		background-color: #fff;
-		text-decoration: none;
-	}
-}
-
-.btn:hover {
-	transition: 0.5s;
-	color: #383838;
-	background-color: #fff;
-}
-
-
-/* Navbar styles */
-
-.navbar {
-	font-family: 'Lato', sans-serif;
-}
 
 .navbar-default {
 
@@ -80,15 +56,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Links styles */
-
-.links {
-	margin-top: 20px;
-	.btn-default {
-		color: #0a8fd5;
-	}
-}
-
 
 /* Message styles */
 
@@ -96,14 +63,12 @@ h1, h2, h3, h4, h5, h6 {
 	box-sizing: border-box;
 	background-color: #383838;
 	margin-bottom: 25px;
-	margin-right: 10px;
-	margin-left: 10px;
 	padding: 1.4em 1.4em;
-	border-bottom: 4px solid #0a8fd5;
+	border-bottom: 4px solid #18bc9c;
 
 	.message-title {
 		font-size: 1.5em;
-		font-family: 'Lato', sans-serif;
+	
 		font-weight: 300;
 		margin-top: 0;
 		color: white;
@@ -132,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 2.0em 1.5em;
 	border-bottom: 4px solid #0a8fd5;
 	color: #fff;
-	font-family: 'Lato', sans-serif;
+
 	font-weight: 300;
 
 	h2 {
@@ -174,7 +139,6 @@ h1, h2, h3, h4, h5, h6 {
 .links {
 	margin-top: 15px;
 	a {
-		color: #0a8fd5;
 		margin-right: 15px;
 	}
 }

@@ -1,6 +1,54 @@
 <%= simple_form_for @message do |f| %>
-	<%= f.input :title, label: "Message Title" %>
-	<%= f.input :description %>
-	<%= f.input :image, as: :file %>
+	<%= f.select :article_type, ['Idea', 'Project','Category'], label: "Message Type" %>
+	<br />
+	<br />
+	<%= f.input :parent, label: "Link Message To", input_html: {min: '0', step: '1', value: f.object.parent || '0'} %>
+	<p class="notlinking">Not linking. Change the id above to link to an article.</p> 
+	<p class="linking" style="display:none">Linking to <a class="parent_link" href="/messages/0">/messages/0</a></p>
+	
+	<div class="formtitle" style="display:none" ><%= f.input :title, label: 'Message Title' %></div>
+	<%= f.input :description  %>
+	<div class="formimage" ><%= f.input :image, as: :file %></div>
 	<%= f.button :submit %>
 <% end %>
+
+<script type="text/javascript">
+
+  $('#message_article_type').change(changeForm);
+
+  function changeForm(){
+  	var value = $( "#message_article_type" ).val();
+  	if (value == "Project") {
+  		
+  		$('.formtitle').show();
+  		$('.formimage').show();
+  		
+  	} else if (value == "Idea") {
+  		
+  		$('.formtitle').hide();
+  		$('.formimage').show();
+  		
+  	} else {
+  		
+  		$('.formtitle').show();
+  		$('.formimage').hide();
+  	}
+  	console.log(value);
+  }
+</script>
+
+<script type="text/javascript">
+  $('#message_parent').bind('keyup mouseup', function () {
+  	var value = $( "#message_parent" ).val();
+  	if (value == 0) {
+  		$(".linking").hide();
+  		$(".notlinking").show();
+  	} else {
+  		$(".parent_link").text("/messages/"+value)
+  		$(".parent_link").attr("href", "/messages/"+value)
+  		$(".linking").show();
+  		$(".notlinking").hide();
+  	}
+  });
+  	
+</script>

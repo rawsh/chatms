@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'therubyracer'
+gem 'bootsy'
+gem 'masonry-rails'
+gem 'twitter-bootswatch-rails', '~> 3.3.4'
+gem 'twitter-bootswatch-rails-helpers'
 gem "paperclip", "~> 5.0.0.beta1"
 gem 'jquery-atwho-rails'
 gem 'rails', '4.2.1'
