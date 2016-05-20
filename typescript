@@ -1311,4 +1311,338 @@ Running [36m[1mrake assets:precompile[22m[39m on [35m⬢ chatms[39m...   
 [?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku [K[K[K[K[Kroku configrun rake assets:precompile --app chatms[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cconfig[K[4Pgit add .rake assets:precompilegit push heroku master[4Pcommit -m "up"[K[4Padd .heroku config:set AWS_ACCESS_KEY_ID=AKIAISXTJMLA26YARBCQ AWS_SECRET_ACCESS_KEY=F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh00ceT3UkuM[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git push heroku[K
 [KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku config:set AWS_ACCESS_KEY_ID=AKIAISXTJMLA26YARBCQ AWS_SECRET_ACCESS_KEY=F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh00ceT3UkuM[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git add .[K
 [KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku config:set AWS_ACCESS_KEY_ID=AKIAISXTJMLA26YARBCQ AWS_SECRET_ACCESS_KEY=F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh00ceT3Uku[K[K[K[K[K[K[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ket a[[[K[Kppname-assets [K=chatms
+Setting [32mappname-assets[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[2K[1GSetting [32mappname-assets[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv21[22m[39m
+[32mappname-assets[39m: chatms
+[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku[K[K[K[K[K[Kgit as[Kdd .
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git commit -m 'hel'
+[master 0ae7fd2] hel
+ 27 files changed, 35736 insertions(+), 5 deletions(-)
+ delete mode 100644 config/aws.yml
+ create mode 100644 public/assets/.sprockets-manifest-f7745a59ca334a11bc82d98b30d542ab.json
+ create mode 100644 public/assets/application-a5879123198aad2e1e521152235568d36bc4b8c9a7bb5e171a22bb225e2f4cdc.js
+ create mode 100644 public/assets/application-a5879123198aad2e1e521152235568d36bc4b8c9a7bb5e171a22bb225e2f4cdc.js.gz
+ create mode 100644 public/assets/application-e408a1760f8be91b31ce72c8a0408d8a1a05a554c22112a24dc8b07b5981c3ee.css
+ create mode 100644 public/assets/application-e408a1760f8be91b31ce72c8a0408d8a1a05a554c22112a24dc8b07b5981c3ee.css.gz
+ create mode 100644 public/assets/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot
+ create mode 100644 public/assets/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot.gz
+ create mode 100644 public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg
+ create mode 100644 public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz
+ create mode 100644 public/assets/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff
+ create mode 100644 public/assets/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf
+ create mode 100644 public/assets/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf.gz
+ create mode 100644 public/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2
+ create mode 100644 public/assets/link-c6de1f6486c9d4315b16b7428f006a2126cab228f572d2caaf0cd819537f7b2f.png
+ create mode 100644 public/assets/plus-7935fc8a4f688feebccfa8def46b24681f11ca201afca5de829782662ec70cbb.png
+ create mode 100644 public/assets/twitter/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot
+ create mode 100644 public/assets/twitter/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot.gz
+ create mode 100644 public/assets/twitter/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg
+ create mode 100644 public/assets/twitter/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz
+ create mode 100644 public/assets/twitter/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff
+ create mode 100644 public/assets/twitter/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf
+ create mode 100644 public/assets/twitter/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf.gz
+ create mode 100644 public/assets/twitter/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2
+ create mode 100644 public/assets/white-3dc94cd155cd82837899ec85d8cce3273126633715046510c263a2cb1c5d9d5a.png
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git add [K[K[K[Kpush heroku
+Counting objects: 49, done.
+Delta compression using up to 8 threads.
+Compressing objects:   2% (1/48)   Compressing objects:   4% (2/48)   Compressing objects:   6% (3/48)   Compressing objects:   8% (4/48)   Compressing objects:  10% (5/48)   Compressing objects:  12% (6/48)   Compressing objects:  14% (7/48)   Compressing objects:  16% (8/48)   Compressing objects:  18% (9/48)   Compressing objects:  20% (10/48)   Compressing objects:  22% (11/48)   Compressing objects:  25% (12/48)   Compressing objects:  27% (13/48)   Compressing objects:  29% (14/48)   Compressing objects:  31% (15/48)   Compressing objects:  33% (16/48)   Compressing objects:  35% (17/48)   Compressing objects:  37% (18/48)   Compressing objects:  39% (19/48)   Compressing objects:  41% (20/48)   Compressing objects:  43% (21/48)   Compressing objects:  45% (22/48)   Compressing objects:  47% (23/48)   Compressing objects:  50% (24/48)   Compressing objects:  52% (25/48)   Compressing objects:  54% (26/48)   Compressing objects:  56% (27/48)   Compressing objects:  58% (28/48)   Compressing objects:  60% (29/48)   Compressing objects:  62% (30/48)   Compressing objects:  64% (31/48)   Compressing objects:  66% (32/48)   Compressing objects:  68% (33/48)   Compressing objects:  70% (34/48)   Compressing objects:  72% (35/48)   Compressing objects:  75% (36/48)   Compressing objects:  77% (37/48)   Compressing objects:  79% (38/48)   Compressing objects:  81% (39/48)   Compressing objects:  83% (40/48)   Compressing objects:  85% (41/48)   Compressing objects:  87% (42/48)   Compressing objects:  89% (43/48)   Compressing objects:  91% (44/48)   Compressing objects:  93% (45/48)   Compressing objects:  95% (46/48)   Compressing objects:  97% (47/48)   Compressing objects: 100% (48/48)   Compressing objects: 100% (48/48), done.
+Writing objects:   2% (1/49)   Writing objects:   4% (2/49)   Writing objects:   6% (3/49)   Writing objects:   8% (4/49)   Writing objects:  10% (5/49)   Writing objects:  12% (6/49)   Writing objects:  14% (7/49)   Writing objects:  16% (8/49)   Writing objects:  18% (9/49)   Writing objects:  20% (10/49)   Writing objects:  22% (11/49)   Writing objects:  24% (12/49)   Writing objects:  26% (13/49)   Writing objects:  30% (15/49)   Writing objects:  32% (16/49)   Writing objects:  34% (17/49)   Writing objects:  36% (18/49)   Writing objects:  38% (19/49)   Writing objects:  40% (20/49)   Writing objects:  42% (21/49)   Writing objects:  44% (22/49)   Writing objects:  46% (23/49)   Writing objects:  48% (24/49)   Writing objects:  51% (25/49)   Writing objects:  53% (26/49)   Writing objects:  55% (27/49)   Writing objects:  57% (28/49)   Writing objects:  59% (29/49)   Writing objects:  61% (30/49)   Writing objects:  63% (31/49)   Writing objects:  65% (32/49)   Writing objects:  67% (33/49)   Writing objects:  69% (34/49)   Writing objects:  71% (35/49)   Writing objects:  73% (36/49)   Writing objects:  75% (37/49)   Writing objects:  77% (38/49)   Writing objects:  79% (39/49)   Writing objects:  81% (40/49)   Writing objects:  83% (41/49)   Writing objects:  85% (42/49)   Writing objects:  87% (43/49)   Writing objects:  89% (44/49)   Writing objects:  91% (45/49)   Writing objects:  93% (46/49)   Writing objects:  95% (47/49)   Writing objects:  97% (48/49)   Writing objects: 100% (49/49)   Writing objects: 100% (49/49), 653.78 KiB | 0 bytes/s, done.
+Total 49 (delta 24), reused 0 (delta 0)
+remote: Compressing source files... done.[K
+remote: Building source:[K
+remote: 
+remote: -----> Using set buildpack heroku/ruby[K
+remote: -----> Ruby app detected[K
+remote: -----> Compiling Ruby/Rails[K
+remote: -----> Using Ruby version: ruby-2.2.4[K
+remote: -----> Installing dependencies using bundler 1.11.2[K
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment[K
+remote:        Warning: the running version of Bundler is older than the version that created the lockfile. We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.[K
+remote:        Fetching gem metadata from https://rubygems.org/.............[K
+remote:        Fetching version metadata from https://rubygems.org/...[K
+remote:        Fetching dependency metadata from https://rubygems.org/..[K
+remote:        Using i18n 0.7.0[K
+remote:        Using json 1.8.3[K
+remote:        Using rake 11.1.2[K
+remote:        Using minitest 5.9.0[K
+remote:        Using thread_safe 0.3.5[K
+remote:        Using builder 3.2.2[K
+remote:        Using erubis 2.7.0[K
+remote:        Using mini_portile2 2.0.0[K
+remote:        Using rack 1.6.4[K
+remote:        Using mime-types-data 3.2016.0221[K
+remote:        Using arel 6.0.3[K
+remote:        Using bcrypt 3.1.11[K
+remote:        Using sass 3.4.22[K
+remote:        Using mimemagic 0.3.1[K
+remote:        Using mini_magick 4.5.1[K
+remote:        Using remotipart 1.2.1[K
+remote:        Using coffee-script-source 1.10.0[K
+remote:        Using thor 0.19.1[K
+remote:        Using commonjs 0.2.7[K
+remote:        Using concurrent-ruby 1.0.2[K
+remote:        Using orm_adapter 0.5.0[K
+remote:        Using multi_json 1.12.1[K
+remote:        Using jquery-atwho-rails 1.3.2[K
+remote:        Using tilt 2.0.4[K
+remote:        Using libv8 3.16.14.15[K
+remote:        Using pg 0.18.4[K
+remote:        Using bundler 1.11.2[K
+remote:        Using ref 2.0.0[K
+remote:        Using rdoc 4.2.2[K
+remote:        Using tzinfo 1.2.2[K
+remote:        Using nokogiri 1.6.7.2[K
+remote:        Using rack-test 0.6.3[K
+remote:        Using warden 1.2.6[K
+remote:        Using heroku-deflater 0.6.2[K
+remote:        Using mime-types 3.0[K
+remote:        Using less 2.6.0[K
+remote:        Using sprockets 3.6.0[K
+remote:        Using therubyracer 0.12.2[K
+remote:        Using sdoc 0.4.1[K
+remote:        Using activesupport 4.2.1[K
+remote:        Using loofah 2.0.3[K
+remote:        Using mail 2.6.4[K
+remote:        Using rails-deprecated_sanitizer 1.0.3[K
+remote:        Using globalid 0.3.6[K
+remote:        Using activemodel 4.2.1[K
+remote:        Using climate_control 0.0.3[K
+remote:        Using jbuilder 2.4.1[K
+remote:        Using rails-html-sanitizer 1.0.3[K
+remote:        Using rails-dom-testing 1.0.7[K
+remote:        Using activejob 4.2.1[K
+remote:        Using activerecord 4.2.1[K
+remote:        Using carrierwave 0.11.2[K
+remote:        Using cocaine 0.5.8[K
+remote:        Using actionview 4.2.1[K
+remote:        Using bootsy 2.2.2[K
+remote:        Using paperclip 5.0.0.beta2[K
+remote:        Using actionpack 4.2.1[K
+remote:        Using actionmailer 4.2.1[K
+remote:        Using railties 4.2.1[K
+remote:        Using less-rails 2.7.1[K
+remote:        Using sprockets-rails 3.0.4[K
+remote:        Using simple_form 3.1.1[K
+remote:        Using responders 2.2.0[K
+remote:        Using jquery-rails 4.1.1[K
+remote:        Using masonry-rails 0.2.4[K
+remote:        Using rails 4.2.1[K
+remote:        Using sass-rails 5.0.4[K
+remote:        Using devise 3.4.1[K
+remote:        Installing execjs 2.7.0[K
+remote:        Using autoprefixer-rails 6.3.6.1[K
+remote:        Using coffee-script 2.4.1[K
+remote:        Using twitter-bootswatch-rails 3.3.4.0[K
+remote:        Using uglifier 3.0.0[K
+remote:        Using bootstrap-sass 3.3.4.1[K
+remote:        Using coffee-rails 4.1.1[K
+remote:        Using twitter-bootswatch-rails-helpers 3.3.2.0[K
+remote:        Using turbolinks 2.5.3[K
+remote:        Installing json_pure 1.8.3[K
+remote:        Installing jmespath 1.2.4[K
+remote:        Installing aws-sdk-core 2.3.7[K
+remote:        Installing aws-sdk-resources 2.3.7[K
+remote:        Installing aws-sdk 2.3.7[K
+remote:        Bundle complete! 25 Gemfile dependencies, 82 gems now installed.[K
+remote:        Gems in the groups development and test were not installed.[K
+remote:        Bundled gems are installed into ./vendor/bundle.[K
+remote:        Bundle completed (9.86s)[K
+remote:        Cleaning up the bundler cache.[K
+remote:        Warning: the running version of Bundler is older than the version that created the lockfile. We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.[K
+remote:        Removing execjs (2.6.0)[K
+remote:        Detected manifest file, assuming assets were compiled locally[K
+remote: 
+remote: ###### WARNING:[K
+remote:        Include 'rails_12factor' gem to enable all platform features[K
+remote:        See https://devcenter.heroku.com/articles/rails-integration-gems for more information.[K
+remote: 
+remote: ###### WARNING:[K
+remote:        You have not declared a Ruby version in your Gemfile.[K
+remote:        To set your Ruby version add this line to your Gemfile:[K
+remote:        ruby '2.2.4'[K
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.[K
+remote: 
+remote: ###### WARNING:[K
+remote:        No Procfile detected, using the default web server.[K
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.[K
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server[K
+remote: 
+remote: 
+remote: -----> Discovering process types[K
+remote:        Procfile declares types     -> (none)[K
+remote:        Default types for buildpack -> console, rake, web, worker[K
+remote: 
+remote: -----> Compressing...[K
+remote:        Done: 60.3M[K
+remote: -----> Launching...[K
+remote:        Released v22[K
+remote:        https://chatms.herokuapp.com/ deployed to Heroku[K
+remote: 
+remote: Verifying deploy... done.[K
+To https://git.heroku.com/chatms.git
+   e987e7e..0ae7fd2  master -> master
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku logs
+[36m2016-05-20T15:38:56.059545+00:00 app[web.1]:[39m 	from /app/config.ru:in `new'
+[36m2016-05-20T15:38:56.059671+00:00 app[web.1]:[39m 	from /app/config.ru:in `<main>'
+[36m2016-05-20T15:38:56.059684+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:49:in `eval'
+[36m2016-05-20T15:38:56.059723+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:299:in `build_app_and_options_from_config'
+[36m2016-05-20T15:38:56.059695+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:49:in `new_from_string'
+[36m2016-05-20T15:38:56.059736+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:208:in `app'
+[36m2016-05-20T15:38:56.059748+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/server.rb:61:in `app'
+[36m2016-05-20T15:38:56.059709+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:40:in `parse_file'
+[36m2016-05-20T15:38:56.059762+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:336:in `wrapped_app'
+[36m2016-05-20T15:38:56.102591+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-05-20T15:38:56.102607+00:00 app[web.1]:[39m => Rails 4.2.1 application starting in production on http://0.0.0.0:56331
+[36m2016-05-20T15:38:56.102608+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-05-20T15:38:56.102608+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-05-20T15:38:56.102609+00:00 app[web.1]:[39m Exiting
+[36m2016-05-20T15:38:56.059773+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:272:in `start'
+[36m2016-05-20T15:38:56.059785+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/server.rb:80:in `start'
+[36m2016-05-20T15:38:56.059797+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-05-20T15:38:56.059842+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-05-20T15:38:56.059859+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-05-20T15:38:56.059873+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-05-20T15:38:56.059943+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-05-20T15:38:56.059972+00:00 app[web.1]:[39m 	from bin/rails:8:in `require'
+[36m2016-05-20T15:38:56.060014+00:00 app[web.1]:[39m 	from bin/rails:8:in `<main>'
+[36m2016-05-20T15:38:57.135983+00:00 heroku[web.1]:[39m Process exited with status 1
+[36m2016-05-20T15:38:57.145379+00:00 heroku[web.1]:[39m State changed from crashed to starting
+[36m2016-05-20T15:38:57.144473+00:00 heroku[web.1]:[39m State changed from starting to crashed
+[36m2016-05-20T15:39:00.730176+00:00 heroku[web.1]:[39m Starting process with command `bin/rails server -p 54200 -e production`
+[36m2016-05-20T15:39:04.634683+00:00 app[web.1]:[39m 	from /app/config/environments/production.rb:7:in `block in <top (required)>'
+[36m2016-05-20T15:39:04.634690+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/railtie.rb:210:in `instance_eval'
+[36m2016-05-20T15:39:04.634692+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+[36m2016-05-20T15:39:04.634666+00:00 app[web.1]:[39m /app/config/environments/production.rb:7:in `fetch': key not found: "AKIAISXTJMLA26YARBCQ" (KeyError)
+[36m2016-05-20T15:39:04.634693+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+[36m2016-05-20T15:39:04.634696+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+[36m2016-05-20T15:39:04.634691+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/railtie.rb:210:in `configure'
+[36m2016-05-20T15:39:04.634694+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+[36m2016-05-20T15:39:04.634696+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'
+[36m2016-05-20T15:39:04.634691+00:00 app[web.1]:[39m 	from /app/config/environments/production.rb:1:in `<top (required)>'
+[36m2016-05-20T15:39:04.634743+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+[36m2016-05-20T15:39:04.634745+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+[36m2016-05-20T15:39:04.634739+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+[36m2016-05-20T15:39:04.634697+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:597:in `each'
+[36m2016-05-20T15:39:04.634697+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:597:in `block in <class:Engine>'
+[36m2016-05-20T15:39:04.634698+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+[36m2016-05-20T15:39:04.634699+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+[36m2016-05-20T15:39:04.634737+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+[36m2016-05-20T15:39:04.634742+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+[36m2016-05-20T15:39:04.634739+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+[36m2016-05-20T15:39:04.634746+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+[36m2016-05-20T15:39:04.634748+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:413:in `call'
+[36m2016-05-20T15:39:04.634750+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+[36m2016-05-20T15:39:04.634752+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+[36m2016-05-20T15:39:04.634775+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:345:in `each'
+[36m2016-05-20T15:39:04.634776+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:345:in `call'
+[36m2016-05-20T15:39:04.634742+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+[36m2016-05-20T15:39:04.634829+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:49:in `new_from_string'
+[36m2016-05-20T15:39:04.634835+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/server.rb:80:in `start'
+[36m2016-05-20T15:39:04.634835+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+[36m2016-05-20T15:39:04.634829+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:40:in `parse_file'
+[36m2016-05-20T15:39:04.634834+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:272:in `start'
+[36m2016-05-20T15:39:04.634777+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+[36m2016-05-20T15:39:04.634779+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+[36m2016-05-20T15:39:04.634780+00:00 app[web.1]:[39m 	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+[36m2016-05-20T15:39:04.634782+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+[36m2016-05-20T15:39:04.634784+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+[36m2016-05-20T15:39:04.634818+00:00 app[web.1]:[39m 	from /app/config/environment.rb:5:in `<top (required)>'
+[36m2016-05-20T15:39:04.634822+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+[36m2016-05-20T15:39:04.634822+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+[36m2016-05-20T15:39:04.634823+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+[36m2016-05-20T15:39:04.634824+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+[36m2016-05-20T15:39:04.634824+00:00 app[web.1]:[39m 	from /app/config.ru:3:in `block in <main>'
+[36m2016-05-20T15:39:04.634825+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+[36m2016-05-20T15:39:04.634826+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+[36m2016-05-20T15:39:04.634826+00:00 app[web.1]:[39m 	from /app/config.ru:in `new'
+[36m2016-05-20T15:39:04.634827+00:00 app[web.1]:[39m 	from /app/config.ru:in `<main>'
+[36m2016-05-20T15:39:04.634828+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:49:in `eval'
+[36m2016-05-20T15:39:04.634830+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:299:in `build_app_and_options_from_config'
+[36m2016-05-20T15:39:04.634831+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:208:in `app'
+[36m2016-05-20T15:39:04.634831+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/server.rb:61:in `app'
+[36m2016-05-20T15:39:04.634832+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:336:in `wrapped_app'
+[36m2016-05-20T15:39:04.634836+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:75:in `tap'
+[36m2016-05-20T15:39:04.634837+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:75:in `server'
+[36m2016-05-20T15:39:04.634837+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+[36m2016-05-20T15:39:04.634839+00:00 app[web.1]:[39m 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands.rb:17:in `<top (required)>'
+[36m2016-05-20T15:39:04.634853+00:00 app[web.1]:[39m 	from bin/rails:8:in `require'
+[36m2016-05-20T15:39:04.634871+00:00 app[web.1]:[39m 	from bin/rails:8:in `<main>'
+[36m2016-05-20T15:39:04.663696+00:00 app[web.1]:[39m => Booting WEBrick
+[36m2016-05-20T15:39:04.663710+00:00 app[web.1]:[39m => Rails 4.2.1 application starting in production on http://0.0.0.0:54200
+[36m2016-05-20T15:39:04.663711+00:00 app[web.1]:[39m => Run `rails server -h` for more startup options
+[36m2016-05-20T15:39:04.663711+00:00 app[web.1]:[39m => Ctrl-C to shutdown server
+[36m2016-05-20T15:39:04.663712+00:00 app[web.1]:[39m Exiting
+[36m2016-05-20T15:39:05.417534+00:00 heroku[web.1]:[39m Process exited with status 1
+[36m2016-05-20T15:39:05.468678+00:00 heroku[web.1]:[39m State changed from starting to crashed
+[35m2016-05-20T15:39:06.880806+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=chatms.herokuapp.com request_id=ecf17b4a-29c1-4cdc-92a9-1bf035a3ad87 fwd="108.226.178.213" dyno= connect= service= status=503 bytes=
+[35m2016-05-20T15:39:07.309179+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=chatms.herokuapp.com request_id=1d938315-5551-49c0-989d-7a4f5a6d65e9 fwd="108.226.178.213" dyno= connect= service= status=503 bytes=
+[35m2016-05-20T15:39:07.708889+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=chatms.herokuapp.com request_id=bb4fbe51-1658-4561-a2fb-afbf1c8a8c0c fwd="108.226.178.213" dyno= connect= service= status=503 bytes=
+[35m2016-05-20T15:39:11.100175+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=chatms.herokuapp.com request_id=fe6a4780-023b-475a-a828-5d966ff33cd1 fwd="108.226.178.213" dyno= connect= service= status=503 bytes=
+[35m2016-05-20T15:39:11.252678+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=chatms.herokuapp.com request_id=8befc861-0f61-4efb-9404-27448ce8af70 fwd="108.226.178.213" dyno= connect= service= status=503 bytes=
+[35m2016-05-20T15:39:12.280108+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=chatms.herokuapp.com request_id=c975a912-3a2e-4ab2-9632-046d5455d1db fwd="108.226.178.213" dyno= connect= service= status=503 bytes=
+[35m2016-05-20T15:39:12.447891+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=chatms.herokuapp.com request_id=d13b0a07-69bb-4e61-aaaa-72912e01a093 fwd="108.226.178.213" dyno= connect= service= status=503 bytes=
+[35m2016-05-20T15:39:12.880111+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=chatms.herokuapp.com request_id=a0c2ef45-522f-4d19-b502-675433f80dcd fwd="108.226.178.213" dyno= connect= service= status=503 bytes=
+[35m2016-05-20T15:39:13.103301+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=chatms.herokuapp.com request_id=abd52270-1eac-4bd6-a6de-2cecaea03259 fwd="108.226.178.213" dyno= connect= service= status=503 bytes=
+[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku raun [K[K[K[Kun rails console
+Running [36m[1mrails console[22m[39m on [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[2K[1GRunning [36m[1mrails console[22m[39m on [35m⬢ chatms[39m... starting, run.8993  [35m⣷[39m[35m⣾[39m[2K[1GRunning [36m[1mrails console[22m[39m on [35m⬢ chatms[39m... connecting, run.8993  [35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[2K[1GRunning [36m[1mrails console[22m[39m on [35m⬢ chatms[39m... up, run.8993  [2K[1GRunning [36m[1mrails console[22m[39m on [35m⬢ chatms[39m... up, run.8993[?25h
+[2K[1G  [2K[1G/app/config/environments/production.rb:7:in `fetch': key not found: "AKIAISXTJMLA26YARBCQ" (KeyError)
+	from /app/config/environments/production.rb:7:in `block in <top (required)>'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/railtie.rb:210:in `instance_eval'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/railtie.rb:210:in `configure'
+	from /app/config/environments/production.rb:1:in `<top (required)>'
+	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:597:in `each'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/engine.rb:597:in `block in <class:Engine>'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:413:in `call'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /app/vendor/ruby-2.2.4/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+	from /app/config/environment.rb:5:in `<top (required)>'
+	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/application.rb:328:in `require_environment!'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:142:in `require_application_and_environment!'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:67:in `console'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.1/lib/rails/commands.rb:17:in `<top (required)>'
+	from /app/bin/rails:8:in `require'
+	from /app/bin/rails:8:in `<main>'
+[2K[1G[?25h[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config
+[90m=== [39m[1mchatms Config Vars[22m
+[32mAWS_ACCESS_KEY_ID[39m:        AKIAISXTJMLA26YARBCQ
+[32mAWS_SECRET_ACCESS_KEY[39m:    F3stEEK0bwrDlmOG8LbScGyiWYM6b0Wh0ceT3Uku
+[32mDATABASE_URL[39m:             postgres://banezndygrvctr:y7i3zzxlw1aChdsQ3Ikt6m7F7M@ec2-54-243-47-83.compute-1.amazonaws.com:5432/da3i2s9skvqak7
+[32mLANG[39m:                     en_US.UTF-8
+[32mRACK_ENV[39m:                 production
+[32mRAILS_ENV[39m:                production
+[32mRAILS_SERVE_STATIC_FILES[39m: enabled
+[32mS3_BUCKET_NAME[39m:           chatms
+[32mSECRET_KEY_BASE[39m:          676091af1cf082814ad64547efaad08cc2fcc210fb8663d24d3569a530931f50644d4c152608b2363a117c6b65bf4f16afd3883c7a4117894a185176e809d664
+[32mappname-assets[39m:           chatms
+[32mchatms[39m:                   appname-assets
+[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config:unset GITHUB_USERNAME[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KAWS_ACCESS_KEY_ID
+Unsetting [32mAWS_ACCESS_KEY_ID[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[2K[1GUnsetting [32mAWS_ACCESS_KEY_ID[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv23[22m[39m
+[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ h
