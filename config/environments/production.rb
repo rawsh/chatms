@@ -1,4 +1,13 @@
 Rails.application.configure do
+  # config/environments/production.rb
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_credentials: {
+      bucket: ENV.fetch('chatms'),
+      access_key_id: ENV.fetch('AKIAJNTONBHU7ZQTID5A'),
+      secret_access_key: ENV.fetch('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'),
+    }
+  }
   # Settings specified here will take precedence over those in config/application.rb.
   config.consider_all_requests_local = true
   # Code is not reloaded between requests.

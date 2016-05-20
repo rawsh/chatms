@@ -1,7 +1,5 @@
-Script started on Thu 19 May 2016 03:04:38 AM UTC
-[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ script/plugin install git://github.com/thoughtbot/paperclip.git[1P[1P[1P[1P[1P[1P[1P
-Script started, file is install
-[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ bundle install
+Script started on Fri 20 May 2016 03:02:06 PM UTC
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ bundle is[Knstall
 Fetching gem metadata from https://rubygems.org/
 Fetching version metadata from https://rubygems.org/
 Fetching dependency metadata from https://rubygems.org/
@@ -18,19 +16,25 @@ Using rack 1.6.4
 Using mime-types-data 3.2016.0221
 Using arel 6.0.3
 Using execjs 2.6.0
+Using json_pure 1.8.3
 Using bcrypt 3.1.11
 Using sass 3.4.22
+Using mimemagic 0.3.1
+Using mini_magick 4.5.1
+Using remotipart 1.2.1
 Using bundler 1.12.3
-Using byebug 9.0.3
+Using byebug 9.0.4
 Using coffee-script-source 1.10.0
 Using thor 0.19.1
+Using commonjs 0.2.7
 Using concurrent-ruby 1.0.2
 Using debug_inspector 0.0.2
 Using orm_adapter 0.5.0
-Using multi_json 1.12.0
+Using multi_json 1.12.1
 Using jquery-atwho-rails 1.3.2
-[32mInstalling mimemagic 0.3.1[0m
 Using tilt 2.0.4
+Using libv8 3.16.14.15
+Using ref 2.0.0
 Using spring 1.7.1
 Using sqlite3 1.3.11
 Using rdoc 4.2.2
@@ -41,67 +45,149 @@ Using warden 1.2.6
 Using mime-types 3.0
 Using autoprefixer-rails 6.3.6.1
 Using uglifier 3.0.0
+Using jmespath 1.2.4
 Using coffee-script 2.4.1
+Using less 2.6.0
 Using sprockets 3.6.0
+Using therubyracer 0.12.2
 Using sdoc 0.4.1
 Using activesupport 4.2.1
 Using loofah 2.0.3
 Using mail 2.6.4
 Using bootstrap-sass 3.3.4.1
+Using aws-sdk-core 2.3.7
 Using rails-deprecated_sanitizer 1.0.3
 Using globalid 0.3.6
 Using activemodel 4.2.1
-[32mInstalling climate_control 0.0.3[0m
+Using climate_control 0.0.3
 Using jbuilder 2.4.1
 Using rails-html-sanitizer 1.0.3
+Using aws-sdk-resources 2.3.7
 Using rails-dom-testing 1.0.7
 Using activejob 4.2.1
 Using activerecord 4.2.1
-[32mInstalling cocaine 0.5.8[0m
+Using carrierwave 0.11.2
+Using cocaine 0.5.8
+[32mInstalling aws-sdk 2.3.7[0m
 Using actionview 4.2.1
-[32mInstalling paperclip 5.0.0.beta2[0m
+Using bootsy 2.2.2
+Using paperclip 5.0.0.beta2
 Using actionpack 4.2.1
 Using actionmailer 4.2.1
 Using railties 4.2.1
+Using less-rails 2.7.1
 Using sprockets-rails 3.0.4
 Using simple_form 3.1.1
 Using coffee-rails 4.1.1
 Using responders 2.2.0
 Using jquery-rails 4.1.1
+Using masonry-rails 0.2.4
 Using web-console 3.1.1
+Using twitter-bootswatch-rails 3.3.4.0
 Using rails 4.2.1
 Using sass-rails 5.0.4
 Using turbolinks 2.5.3
 Using devise 3.4.1
-[32mBundle complete! 19 Gemfile dependencies, 67 gems now installed.[0m
+Using twitter-bootswatch-rails-helpers 3.3.2.0
+[32mBundle complete! 25 Gemfile dependencies, 85 gems now installed.[0m
 [32mGems in the group production were not installed.[0m
 [32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
-[32mPost-install message from paperclip:[0m
-##################################################
-#  NOTE FOR UPGRADING FROM 4.3.0 OR EARLIER       #
-##################################################
-
-Paperclip is now compatible with aws-sdk >= 2.0.0.
-
-If you are using S3 storage, aws-sdk >= 2.0.0 requires you to make a few small
-changes:
-
-* You must set the `s3_region`
-* If you are explicitly setting permissions anywhere, such as in an initializer,
-  note that the format of the permissions changed from using an underscore to
-  using a hyphen. For example, `:public_read` needs to be changed to
-  `public-read`.
-
-For a walkthrough of upgrading from 4 to 5 and aws-sdk >= 2.0 you can watch
-http://rubythursday.com/episodes/ruby-snack-27-upgrade-paperclip-and-aws-sdk-in-prep-for-rails-5
-[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ ls vendor/plugins
-ls: cannot access vendor/plugins: No such file or directory
-[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ vendor
-bash: vendor: command not found
-[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ cdvendorcvendordvendor vendor
-[01;32mrawas[00m:[01;34m~/workspace/vendor[00m (master) $ cd plugins
-bash: cd: plugins: No such file or directory
-[01;32mrawas[00m:[01;34m~/workspace/vendor[00m (master) $ cd ..
-[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ cd ..\\[K[K[K[K[K[K[Krails generate paperclip user avatar)[K[K[K[K[K[K[K[K[K[K[K[Kmessage image
-Running via Spring preloader in process 3159
-[1m[32m      create[0m  db/migrate/20160519030937_add_attachment_image_to_messages.rb
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ bundle ub[Kpdate
+Fetching gem metadata from https://rubygems.org/
+Fetching version metadata from https://rubygems.org/
+Fetching dependency metadata from https://rubygems.org/
+Resolving dependencies....................
+Using rake 11.1.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.9.0
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using rack 1.6.4
+Using mime-types-data 3.2016.0221
+Using arel 6.0.3
+[32mInstalling execjs 2.7.0 (was 2.6.0)[0m
+Using json_pure 1.8.3
+Using bcrypt 3.1.11
+Using sass 3.4.22
+Using mimemagic 0.3.1
+Using mini_magick 4.5.1
+Using remotipart 1.2.1
+Using bundler 1.12.3
+Using byebug 9.0.4
+Using coffee-script-source 1.10.0
+Using thor 0.19.1
+Using commonjs 0.2.7
+Using concurrent-ruby 1.0.2
+Using debug_inspector 0.0.2
+Using orm_adapter 0.5.0
+Using multi_json 1.12.1
+Using jquery-atwho-rails 1.3.2
+Using tilt 2.0.4
+Using libv8 3.16.14.15
+Using ref 2.0.0
+Using spring 1.7.1
+Using sqlite3 1.3.11
+Using rdoc 4.2.2
+Using tzinfo 1.2.2
+Using nokogiri 1.6.7.2
+Using rack-test 0.6.3
+Using warden 1.2.6
+Using mime-types 3.0
+Using autoprefixer-rails 6.3.6.1
+Using uglifier 3.0.0
+Using jmespath 1.2.4
+Using coffee-script 2.4.1
+Using less 2.6.0
+Using sprockets 3.6.0
+Using therubyracer 0.12.2
+Using sdoc 0.4.1
+Using activesupport 4.2.1
+Using loofah 2.0.3
+Using mail 2.6.4
+Using bootstrap-sass 3.3.4.1
+Using aws-sdk-core 2.3.7
+Using rails-deprecated_sanitizer 1.0.3
+Using globalid 0.3.6
+Using activemodel 4.2.1
+Using climate_control 0.0.3
+Using jbuilder 2.4.1
+Using rails-html-sanitizer 1.0.3
+Using aws-sdk-resources 2.3.7
+Using rails-dom-testing 1.0.7
+Using activejob 4.2.1
+Using activerecord 4.2.1
+Using carrierwave 0.11.2
+Using cocaine 0.5.8
+Using aws-sdk 2.3.7
+Using actionview 4.2.1
+Using bootsy 2.2.2
+Using paperclip 5.0.0.beta2
+Using actionpack 4.2.1
+Using actionmailer 4.2.1
+Using railties 4.2.1
+Using less-rails 2.7.1
+Using sprockets-rails 3.0.4
+Using simple_form 3.1.1
+Using coffee-rails 4.1.1
+Using responders 2.2.0
+Using jquery-rails 4.1.1
+Using masonry-rails 0.2.4
+Using web-console 3.1.1
+Using twitter-bootswatch-rails 3.3.4.0
+Using rails 4.2.1
+Using sass-rails 5.0.4
+Using turbolinks 2.5.3
+Using devise 3.4.1
+Using twitter-bootswatch-rails-helpers 3.3.2.0
+[32mBundle updated![0m
+[32mGems in the group production were not installed.[0m
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config:set S3_BUCKET_NAME=appname-assets[C[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assets[1P=appname-assetsc=appname-assetsh=appname-assetsa=appname-assetst=appname-assetsm=appname-assetss=appname-assets
+Setting [32mchatms[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[2K[1GSetting [32mchatms[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv17[22m[39m
+[32mchatms[39m: appname-assets
+[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config:set AWS_ACCESS_KEY_ID=xxx AWS_SECRET_ACCESS_KEY=yyy[C[C[1P AWS_SECRET_ACCESS_KEY=yyy[1P AWS_SECRET_ACCESS_KEY=yyy[1P AWS_SECRET_ACCESS_KEY=yyyA AWS_SECRET_ACCESS_KEY=yyyK AWS_SECRET_ACCESS_KEY=yyyI AWS_SECRET_ACCESS_KEY=yyyA AWS_SECRET_ACCESS_KEY=yyyJ AWS_SECRET_ACCESS_KEY=yyyN AWS_SECRET_ACCESS_KEY=yyyT AWS_SECRET_ACCESS_KEY=yyyO AWS_SECRET_ACCESS_KEY=yyyN AWS_SECRET_ACCESS_KEY=yyyB AWS_SECRET_ACCESS_KEY=yyyH AWS_SECRET_ACCESS_KEY=yyyU AWS_SECRET_ACCESS_KEY=yyy7 AWS_SECRET_ACCESS_KEY=yyyZ AWS_SECRET_ACCESS_KEY=yyyQ AWS_SECRET_ACCESS_KEY=yyyT AWS_SECRET_ACCESS_KEY=yyyI AWS_SECRET_ACCESS_KEY=yyyD AWS_SECRET_ACCESS_KEY=yyy5 AWS_SECRET_ACCESS_KEY=yyyA AWS_SECRET_ACCESS_KEY=yyy
+Setting [32mAWS_ACCESS_KEY_ID[39m, [32mAWS_SECRET_ACCESS_KEY[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[2K[1GSetting [32mAWS_ACCESS_KEY_ID[39m, [32mAWS_SECRET_ACCESS_KEY[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv18[22m[39m
+[32mAWS_ACCESS_KEY_ID[39m:     AKIAJNTONBHU7ZQTID5A
+[32mAWS_SECRET_ACCESS_KEY[39m: 
