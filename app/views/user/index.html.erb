@@ -3,7 +3,7 @@
     <% @users.each do |user| %>
         <div class="post col-md-4">
             <div class="message">
-                <% if user.image.exists? %>
+                <% if user.image? %>
             		<%= image_tag(user.image.url(:thumb), :style => "position:absolute;right:15px;top:0;") %>
             	<% end %>
                 <h2 class="message-title"><%= link_to image_tag("white.png", :width => "20px"), user %>&nbsp;&nbsp;<%= user.username %></h2>

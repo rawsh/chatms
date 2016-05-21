@@ -15,6 +15,9 @@
 					<br />
 				<% end %>
 				<%= link_to "#{@messages.where(:parent => message.id).length.to_s} links", message %>
+				<% if message.parent? %>
+					<p style="color:white;">linked to <a href="/messages/<%= message.parent %>">post <%= message.parent %></a></p>
+				<% end %>
 				<p class="message-posted-by"><%= message.article_type %> posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
 
 				<hr />

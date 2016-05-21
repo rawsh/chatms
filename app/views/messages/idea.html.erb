@@ -11,8 +11,11 @@
 					<br />
 				<% end %>
 				<%= link_to "#{@messages.where(:parent => message.id).length.to_s} links", message %>
+				<% if message.parent? %>
+					<p style="color:white;">linked to <a href="/messages/<%= message.parent %>">post <%= message.parent %></a></p>
+				<% end %>
 				<p class="message-posted-by">posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
-
+				
 				<hr />
 				<% if message.comments.length > 0 %>
 				<p id="comments" style="color:white;" >Showing <%= (message.comments.length > 2) ? 3 : message.comments.length %>/<a href="/messages/<%= message.id.to_s %>#comments"><%= message.comments.length %></a> comments.</p>
