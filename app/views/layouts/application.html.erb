@@ -20,18 +20,27 @@
 						<li class="active"><a href="/ideas">Ideas</a></li>
 						<li><a href="/projects">Projects</a></li>
 						<li><a href="/categories">Categories</a></li>
+						<li><a href="/profiles">Profiles</a></li>
 					<% elsif current_page?('/projects') %>
 						<li><a href="/ideas">Ideas</a></li>
 						<li class="active"><a href="/projects">Projects</a></li>
 						<li><a href="/categories">Categories</a></li>
+						<li><a href="/profiles">Profiles</a></li>
 					<% elsif current_page?('/categories') %>
 						<li><a href="/ideas">Ideas</a></li>
 						<li><a href="/projects">Projects</a></li>
 						<li class="active" ><a href="/categories">Categories</a></li>
+						<li><a href="/profiles">Profiles</a></li>
+					<% elsif current_page?('/profiles') %>
+						<li><a href="/ideas">Ideas</a></li>
+						<li><a href="/projects">Projects</a></li>
+						<li><a href="/categories">Categories</a></li>
+						<li class="active"><a href="/profiles">Profiles</a></li>
 					<% else %>
 						<li><a href="/ideas">Ideas</a></li>
 						<li><a href="/projects">Projects</a></li>
 						<li><a href="/categories">Categories</a></li>
+						<li><a href="/profiles">Profiles</a></li>
 					<% end %>
 				<% else %>
 					<li><%= link_to "Sign Up", new_user_registration_path %></li>
@@ -41,8 +50,17 @@
 			<% if user_signed_in? %>
 				<ul class="navbar-nav navbar-right nav">
 					<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+					<% if current_page?('/users/edit') %>
+					<li class="active" ><%= link_to "Profile", edit_user_registration_path %></li>
+					<% else %>
 					<li><%= link_to "Profile", edit_user_registration_path %></li>
+					<% end %>
+					
+					<% if current_page?('/messages/new') %>
+					<li class="active"><%= link_to "New Post", new_message_path %></li>
+					<% else %>
 					<li><%= link_to "New Post", new_message_path %></li>
+					<% end %>
 				</ul>
 			<% end %>
 		</div>
