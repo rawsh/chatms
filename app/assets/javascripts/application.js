@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery.atwho
 //= require jquery_ujs
-//= require bootsy
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require masonry/jquery.masonry

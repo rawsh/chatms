@@ -3,24 +3,20 @@
 	<% @messages.each do |message| %>
 		<div class="post col-md-6">
 			<div class="message">
-				<% if message.article_type == "Idea" %>
-				<p class="message-description"><%= link_to image_tag("white.png", :width => "25px"), message %> 	&nbsp;  <%= message.description %></p>
-				<p class="message-posted-by">posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
-				
-				<% else %>	
-				<h2 class="message-title"><%= link_to image_tag("white.png", :width => "25px"), message %> 	&nbsp; <%= message.title %></h2>
-				<p class="message-posted-by">posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
-				<p class="message-description"><%= message.description %></p>
+				<%= link_to image_tag("white.png", :width => "25px"), message %>
+				<% if not message.article_type == "Idea" %>
+				<h2 class="message-title" style="margin-top: -25px;margin-left: 38px;"><%= message.title %></h2>
 				<% end %>
-				<%= if message.image?
-					image_tag(message.image.url, style: 'max-width:100%;' )
-				end %>
-				<% if message.user_id == current_user.id %>
-					<div class="links">
-						<%= link_to "Edit", edit_message_path(message) %>
-						<%= link_to "Delete", message_path(message), method: :delete, data: { confirm: "Are you sure?" } %>
-					</div>
+				 
+				<p class="message-description" style="padding-top: 10px;"><%= message.description %></p>
+				<% if message.image? %>
+					<%= image_tag(message.image.url, style: 'max-width:100%;' ) %>
+					<br />
+					<br />
 				<% end %>
+				<%= link_to "#{@messages.where(:parent => message.id).length.to_s} links", message %>
+				<p class="message-posted-by">posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
+
 				<hr />
 				<% if message.comments.length > 0 %>
 				<p id="comments" style="color:white;" >Showing <%= (message.comments.length > 2) ? 3 : message.comments.length %>/<a href="/messages/<%= message.id.to_s %>#comments"><%= message.comments.length %></a> comments.</p>

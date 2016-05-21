@@ -2,7 +2,7 @@
 	<%= f.select :article_type, ['Idea', 'Project','Category'], label: "Message Type" %>
 	<br />
 	<br />
-	<%= f.input :parent, label: "Link Message To", input_html: {min: '0', step: '1', value: f.object.parent || '0'} %>
+	<%= f.input :parent, label: "Link Message To", input_html: {min: '0', step: '1', value: f.object.parent || params[:link]} %>
 	<p class="notlinking">Not linking. Change the id above to link to an article.</p> 
 	<p class="linking" style="display:none">Linking to <a class="parent_link" href="/messages/0">/messages/0</a></p>
 	
@@ -13,7 +13,7 @@
 <% end %>
 
 <script type="text/javascript">
-
+	
   $('#message_article_type').change(changeForm);
 
   function changeForm(){
@@ -38,7 +38,10 @@
 </script>
 
 <script type="text/javascript">
-  $('#message_parent').bind('keyup mouseup', function () {
+	$(document).ready(checkForm)
+  $('#message_parent').bind('keyup mouseup', checkForm);
+  
+  function checkForm() {
   	var value = $( "#message_parent" ).val();
   	if (value == 0) {
   		$(".linking").hide();
@@ -49,6 +52,6 @@
   		$(".linking").show();
   		$(".notlinking").hide();
   	}
-  });
+  }
   	
 </script>

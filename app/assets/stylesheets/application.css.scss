@@ -34,25 +34,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.navbar-default {
+.navbar {
+	margin-bottom:0 !important;
+	border-radius:0 !important;
+}
 
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background-color: #fff;
-
-	.navbar-nav > li > a {
-		color: #222;
-	}
-
-	.navbar-link {
-		color: #222;
-	}
-
-	.navbar-brand {
-		color: #222;
-		letter-spacing: 1.1px;
-	}
-
+.white {
+	padding-top:3px;
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
 }
 
 
@@ -95,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 	box-sizing: border-box;
 	background-color: #383838;
 	padding: 2.0em 1.5em;
-	border-bottom: 4px solid #0a8fd5;
+	border-bottom: 4px solid #18bc9c;
 	color: #fff;
 
 	font-weight: 300;

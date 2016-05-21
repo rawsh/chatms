@@ -1645,4 +1645,134 @@ Running [36m[1mrails console[22m[39m on [35m⬢ chatms[39m...   [?25l[3
 [32mchatms[39m:                   appname-assets
 [?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config:unset GITHUB_USERNAME[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KAWS_ACCESS_KEY_ID
 Unsetting [32mAWS_ACCESS_KEY_ID[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[2K[1GUnsetting [32mAWS_ACCESS_KEY_ID[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv23[22m[39m
-[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ h
+[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config:unset AWS_ACCESS_KEY_ID[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KAWS_SECRET_ACCESS_KEY
+Unsetting [32mAWS_SECRET_ACCESS_KEY[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[2K[1GUnsetting [32mAWS_SECRET_ACCESS_KEY[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv24[22m[39m
+[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config:unset AWS_SECRET_ACCESS_KEY[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kt appname-assets
+Unsetting [32mappname-assets[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39m[35m⣷[39m[35m⣾[39m[2K[1GUnsetting [32mappname-assets[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv25[22m[39m
+[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config:unset appname-assets[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcham[Ktms
+Unsetting [32mchatms[39m and restarting [35m⬢ chatms[39m...   [?25l[35m⣾[39m[35m⣽[39m[35m⣻[39m[35m⢿[39m[35m⡿[39m[35m⣟[39m[35m⣯[39mh[35m⣷[39me[35m⣾[39m[35m⣽[39mr[2K[1GUnsetting [32mchatms[39m and restarting [35m⬢ chatms[39m... [?25hdone, [34m[1mv26[22m[39m
+[?25h[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ heroku config
+[90m=== [39m[1mchatms Config Vars[22m
+[32mDATABASE_URL[39m:             postgres://banezndygrvctr:y7i3zzxlw1aChdsQ3Ikt6m7F7M@ec2-54-243-47-83.compute-1.amazonaws.com:5432/da3i2s9skvqak7
+[32mLANG[39m:                     en_US.UTF-8
+[32mRACK_ENV[39m:                 production
+[32mRAILS_ENV[39m:                production
+[32mRAILS_SERVE_STATIC_FILES[39m: enabled
+[32mS3_BUCKET_NAME[39m:           chatms
+[32mSECRET_KEY_BASE[39m:          676091af1cf082814ad64547efaad08cc2fcc210fb8663d24d3569a530931f50644d4c152608b2363a117c6b65bf4f16afd3883c7a4117894a185176e809d664
+[?25h[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git add .
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git commit -m 'remove s3 not working :('
+[master c0c4880] remove s3 not working :(
+ 2 files changed, 335 insertions(+), 12 deletions(-)
+[01;32mrawas[00m:[01;34m~/workspace[00m (master) $ git push heroku
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 4.65 KiB | 0 bytes/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Compressing source files... done.[K
+remote: Building source:[K
+remote: 
+remote: -----> Using set buildpack heroku/ruby[K
+remote: -----> Ruby app detected[K
+remote: -----> Compiling Ruby/Rails[K
+remote: -----> Using Ruby version: ruby-2.2.4[K
+remote: -----> Installing dependencies using bundler 1.11.2[K
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment[K
+remote:        Warning: the running version of Bundler is older than the version that created the lockfile. We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.[K
+remote:        Using rake 11.1.2[K
+remote:        Using i18n 0.7.0[K
+remote:        Using json 1.8.3[K
+remote:        Using minitest 5.9.0[K
+remote:        Using thread_safe 0.3.5[K
+remote:        Using builder 3.2.2[K
+remote:        Using erubis 2.7.0[K
+remote:        Using mini_portile2 2.0.0[K
+remote:        Using rack 1.6.4[K
+remote:        Using mime-types-data 3.2016.0221[K
+remote:        Using arel 6.0.3[K
+remote:        Using execjs 2.7.0[K
+remote:        Using json_pure 1.8.3[K
+remote:        Using bcrypt 3.1.11[K
+remote:        Using sass 3.4.22[K
+remote:        Using mimemagic 0.3.1[K
+remote:        Using mini_magick 4.5.1[K
+remote:        Using remotipart 1.2.1[K
+remote:        Using coffee-script-source 1.10.0[K
+remote:        Using thor 0.19.1[K
+remote:        Using commonjs 0.2.7[K
+remote:        Using concurrent-ruby 1.0.2[K
+remote:        Using orm_adapter 0.5.0[K
+remote:        Using multi_json 1.12.1[K
+remote:        Using jquery-atwho-rails 1.3.2[K
+remote:        Using tilt 2.0.4[K
+remote:        Using libv8 3.16.14.15[K
+remote:        Using pg 0.18.4[K
+remote:        Using bundler 1.11.2[K
+remote:        Using ref 2.0.0[K
+remote:        Using tzinfo 1.2.2[K
+remote:        Using rdoc 4.2.2[K
+remote:        Using nokogiri 1.6.7.2[K
+remote:        Using mime-types 3.0[K
+remote:        Using autoprefixer-rails 6.3.6.1[K
+remote:        Using uglifier 3.0.0[K
+remote:        Using jmespath 1.2.4[K
+remote:        Using rack-test 0.6.3[K
+remote:        Using warden 1.2.6[K
+remote:        Using heroku-deflater 0.6.2[K
+remote:        Using coffee-script 2.4.1[K
+remote:        Using less 2.6.0[K
+remote:        Using sprockets 3.6.0[K
+remote:        Using therubyracer 0.12.2[K
+remote:        Using activesupport 4.2.1[K
+remote:        Using mail 2.6.4[K
+remote:        Using bootstrap-sass 3.3.4.1[K
+remote:        Using aws-sdk-core 2.3.7[K
+remote:        Using loofah 2.0.3[K
+remote:        Using sdoc 0.4.1[K
+remote:        Using rails-deprecated_sanitizer 1.0.3[K
+remote:        Using globalid 0.3.6[K
+remote:        Using activemodel 4.2.1[K
+remote:        Using climate_control 0.0.3[K
+remote:        Using jbuilder 2.4.1[K
+remote:        Using aws-sdk-resources 2.3.7[K
+remote:        Using rails-html-sanitizer 1.0.3[K
+remote:        Using rails-dom-testing 1.0.7[K
+remote:        Using activejob 4.2.1[K
+remote:        Using activerecord 4.2.1[K
+remote:        Using carrierwave 0.11.2[K
+remote:        Using cocaine 0.5.8[K
+remote:        Using aws-sdk 2.3.7[K
+remote:        Using actionview 4.2.1[K
+remote:        Using bootsy 2.2.2[K
+remote:        Using paperclip 5.0.0.beta2[K
+remote:        Using actionpack 4.2.1[K
+remote:        Using actionmailer 4.2.1[K
+remote:        Using railties 4.2.1[K
+remote:        Using less-rails 2.7.1[K
+remote:        Using sprockets-rails 3.0.4[K
+remote:        Using simple_form 3.1.1[K
+remote:        Using coffee-rails 4.1.1[K
+remote:        Using responders 2.2.0[K
+remote:        Using jquery-rails 4.1.1[K
+remote:        Using masonry-rails 0.2.4[K
+remote:        Using twitter-bootswatch-rails 3.3.4.0[K
+remote:        Using rails 4.2.1[K
+remote:        Using sass-rails 5.0.4[K
+remote:        Using turbolinks 2.5.3[K
+remote:        Using devise 3.4.1[K
+remote:        Using twitter-bootswatch-rails-helpers 3.3.2.0[K
+remote:        Bundle complete! 25 Gemfile dependencies, 82 gems now installed.[K
+remote:        Gems in the groups development and test were not installed.[K
+remote:        Bundled gems are installed into ./vendor/bundle.[K
+remote:        Bundle completed (0.48s)[K
+remote:        Cleaning up the bundler cache.[K
+remote:        Warning: the running version of Bundler is older than the version that created the lockfile. We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.[K
+remote:        Detected manifest file, assuming assets were compiled locally[K
+remote: 
+remote: ###### WARNING:[K
+remote:        Include 'rails_12factor' gem to enable all platform features[K
+remote:        See https://devcenter.heroku.com/articles/rails-integration-gems for more information.[K
+remote: 
+remote: ###### WARNING:[K
+remote:        You have not declared a Ruby version i

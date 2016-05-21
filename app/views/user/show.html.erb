@@ -1,6 +1,8 @@
 <% if user_signed_in? %>
+    <% if @user.image? %>
+		<%= image_tag(@user.image.url(:thumb)) %>
+	<% end %>
     <h2><%= @user.username %></h2>
-    <br />
     <h4><%= @user.email %></h4>
     <br />
     <% if @messages.where(user_id: @user.id).length != 0 %>

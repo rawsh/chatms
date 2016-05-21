@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body style="overflow-x:hidden;">
 
 	<nav class="navbar navbar-default">
 		<div class="container">
@@ -16,17 +16,34 @@
 			</div>
 			<ul class="navbar-nav nav">
 				<% if user_signed_in? %>
-					<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
-					<li><a href="/ideas">Ideas</a></li>
-					<li><a href="/projects">Projects</a></li>
-					<li><a href="/categories">Categories</a></li>
+					<% if current_page?('/ideas') %>
+						<li class="active"><a href="/ideas">Ideas</a></li>
+						<li><a href="/projects">Projects</a></li>
+						<li><a href="/categories">Categories</a></li>
+					<% elsif current_page?('/projects') %>
+						<li><a href="/ideas">Ideas</a></li>
+						<li class="active"><a href="/projects">Projects</a></li>
+						<li><a href="/categories">Categories</a></li>
+					<% elsif current_page?('/categories') %>
+						<li><a href="/ideas">Ideas</a></li>
+						<li><a href="/projects">Projects</a></li>
+						<li class="active" ><a href="/categories">Categories</a></li>
+					<% else %>
+						<li><a href="/ideas">Ideas</a></li>
+						<li><a href="/projects">Projects</a></li>
+						<li><a href="/categories">Categories</a></li>
+					<% end %>
 				<% else %>
 					<li><%= link_to "Sign Up", new_user_registration_path %></li>
 					<li><%= link_to "Log In", new_user_session_path %></li>
 				<% end %>
 			</ul>
 			<% if user_signed_in? %>
-				<p><%= link_to image_tag("plus.png", :alt => "add new", :width => "50px", :class => "navbar-link navbar-right"), new_message_path %></p>
+				<ul class="navbar-nav navbar-right nav">
+					<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+					<li><%= link_to "Profile", edit_user_registration_path %></li>
+					<li><%= link_to "New Post", new_message_path %></li>
+				</ul>
 			<% end %>
 		</div>
 	</nav>

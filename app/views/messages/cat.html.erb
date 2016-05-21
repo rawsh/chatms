@@ -4,15 +4,10 @@
 		<div class="post col-md-6">
 			<div class="message">
 				<h2 class="message-title"><%= link_to image_tag("white.png", :width => "25px"), message %> 	&nbsp; <%= message.title %></h2>
-				<p class="message-posted-by">posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
 				<p class="message-description"><%= message.description %></p>
-				<% if message.user_id == current_user.id %>
-					<div class="links">
-						<%= link_to "Edit", edit_message_path(message) %>
-						<%= link_to "Delete", message_path(message), method: :delete, data: { confirm: "Are you sure?" } %>
-					</div>
-				<% end %>
 				<hr />
+				<%= link_to "#{@messages.where(:parent => message.id).length.to_s} links", message %>
+				<p class="message-posted-by">posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
 			</div>
 		</div>
 	<% end %>

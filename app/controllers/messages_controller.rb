@@ -20,6 +20,7 @@ class MessagesController < ApplicationController
 	
 	
 	def show
+		@messages = Message.all.order("created_at DESC")
 	end
 
 	def new
@@ -53,7 +54,7 @@ class MessagesController < ApplicationController
 
 	private
 		def message_params
-			params.require(:message).permit(:article_type, :title, :description, :image)
+			params.require(:message).permit(:article_type, :title, :description, :image, :parent)
 		end
 
 		def find_message

@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'therubyracer'
-gem 'bootsy'
 gem 'aws-sdk', '~> 2.3'
 gem 'masonry-rails'
 gem 'twitter-bootswatch-rails', '~> 3.3.4'
