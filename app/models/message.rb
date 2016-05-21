@@ -3,7 +3,7 @@ class Message < ActiveRecord::Base
 	belongs_to :user
 	has_many :comments
 	
-	has_attached_file :image,:storage => :s3,:s3_credentials => "#{Rails.root}/config/s3.yml",
+	has_attached_file :image,
                   :url  => "/assets/products/:id/:style/:basename.:extension",
                   :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"
 	
