@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails_12factor'
+gem 'aws-sdk', '~> 2.3'
 gem 'therubyracer'
 gem 'aws-sdk', '~> 2.3'
 gem 'masonry-rails'
