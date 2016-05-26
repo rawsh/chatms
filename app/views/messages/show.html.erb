@@ -8,11 +8,11 @@
 			<h2 class="message-title"><%= link_to image_tag("white.png", :width => "25px"), @message %> &nbsp; <%= @message.title %></h2>
 			<p class="message-description"><%= @message.description %></p>
 		<% end %>
-		<%= if @message.image? 
-					image_tag(@message.image.url, style: 'max-width:100%;' )
-		end %>
-		<br />
-		<br />
+		<% if @message.image? %>
+			<%= image_tag(@message.image.url, style: 'max-width:100%;' ) %>
+			<br />
+			<br />
+		<% end %>
 		<p style="color:white;"><%= @messages.where(:parent => @message.id).length %> links</p>
 			<p class="message-posted-by">posted by <%= link_to @message.user.username, user_path(@message.user) %> <%= time_ago_in_words(@message.created_at) %> ago</p>
 			
@@ -22,22 +22,15 @@
 				<%= link_to "Delete", message_path(@message), method: :delete, data: { confirm: "Are you sure?" } %>
 			</div>
 		<% end %>
-		<br />
-		<!-- renders the _comment.html.erb partial file. -->
-		<p id="comments"><%= render @message.comments %></p>
-		<!-- renders the comments form -->
-		<%= render 'comments/form' %>
 	</div>
 </div>
-<div class="col-md-6 ">
-	<div class="container row" style="padding-bottom:30px;">
+<div class='col-md-6 container row' style="padding-bottom:30px;">
 	<div class="col-md-2">
 	<%= link_to "<button class='btn btn-default'>Reply with linked post</button>".html_safe, "/messages/new/?link="+@message.id.to_s %>
 	</div>
-	<div class="col-md-2">
-	<%= link_to "<button class=\"btn btn-default focusbutton\">Reply with short comment</button>".html_safe, "#comments" %>
-	</div>
-	</div>
+	<br />
+	<br />
+	<br />
 	<% @messages.where(:parent => @message.id).each do |message| %>
 		<div class="col-md-12">
     			<div class="message">
@@ -49,13 +42,19 @@
 					<% else %>	
 					<h2 class="message-title"><%= link_to image_tag("white.png", :width => "25px"), message %> &nbsp; <%= message.title %></h2>
 					<p class="message-description"><%= message.description %></p>
-					<%= if message.image?
-						image_tag(message.image.url, style: 'max-width:100%;' )
-					end %>
+					<% if message.image? %>
+						<%= image_tag(message.image.url, style: 'max-width:100%;' ) %>
+						<br />
+						<br />
 					<% end %>
-					<br />
-					<br />
+					<% end %>
 					<%= link_to "#{@messages.where(:parent => message.id).length.to_s} links", message %>
+					<div class="links btn-group">
+						<% if @message.user_id == current_user.id %>
+							<%= link_to "Edit", edit_message_path(@message) %>
+							<%= link_to "Delete", message_path(@message), method: :delete, data: { confirm: "Are you sure?" } %>
+						<% end %>
+					</div>
 					<p class="message-posted-by">posted by <%= link_to message.user.username, user_path(message.user) %> <%= time_ago_in_words(message.created_at) %> ago</p>
 					
     			</div>

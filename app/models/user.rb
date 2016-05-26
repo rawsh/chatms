@@ -2,6 +2,10 @@ class User < ActiveRecord::Base
 	has_many :messages
 	has_many :comments
 	
+	def self.search(search)
+	  where("username LIKE ?", "%#{search}%")
+	end
+	
 	attr_accessor :login
 	
   # Include default devise modules. Others available are:

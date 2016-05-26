@@ -1,8 +1,11 @@
 class Message < ActiveRecord::Base
 	
 	belongs_to :user
-	has_many :comments
 	
+	def self.search(search)
+	  where("title LIKE ? OR description LIKE ?", "%#{search}%", "%#{search}%")
+	end
+		
 	has_attached_file :image,
                   :url  => "/assets/products/:id/:style/:basename.:extension",
                   :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"

@@ -3,24 +3,44 @@ class MessagesController < ApplicationController
 	
 
 	def index
-		@messages = Message.all.order("created_at DESC")
+		if params[:search]
+	      	@messages = Message.search(params[:search]).order("created_at DESC")
+	    else
+			@messages = Message.all.order("created_at DESC")
+		end
 	end
 	
 	def cat
-		@messages = Message.all.order("created_at DESC")
+		if params[:search]
+	      	@messages = Message.search(params[:search]).order("created_at DESC")
+	    else
+			@messages = Message.all.order("created_at DESC")
+		end
 	end
 	
 	def idea
-		@messages = Message.all.order("created_at DESC")
+		if params[:search]
+	      	@messages = Message.search(params[:search]).order("created_at DESC")
+	    else
+			@messages = Message.all.order("created_at DESC")
+		end
 	end
 	
 	def proj
-		@messages = Message.all.order("created_at DESC")
+		if params[:search]
+	      	@messages = Message.search(params[:search]).order("created_at DESC")
+	    else
+			@messages = Message.all.order("created_at DESC")
+		end
 	end
 	
 	
 	def show
-		@messages = Message.all.order("created_at DESC")
+		if params[:search]
+	      	@messages = Message.search(params[:search]).order("created_at DESC")
+	    else
+			@messages = Message.all.order("created_at DESC")
+		end
 	end
 
 	def new
