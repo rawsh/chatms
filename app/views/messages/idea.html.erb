@@ -2,7 +2,7 @@
 	<div class="mcbox">
 	<% @messages.where(:article_type => "Idea").each do |message| %>
 		<div class="post col-md-6">
-			<div class="message">
+			<div class="message Ideapost">
 				<%= link_to image_tag("white.png", :width => "25px"), message %>
 				<p class="message-description" style="padding-top: 10px;"><%= message.description %></p>
 				<% if message.image? %>

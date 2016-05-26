@@ -2,7 +2,7 @@
     <div class="mcbox">
     <% @users.each do |user| %>
         <div class="post col-md-4">
-            <div class="message">
+            <div class="message Userpost">
                 <% if user.image? %>
             		<%= image_tag(user.image.url(:thumb), :style => "position:absolute;right:15px;top:0;") %>
             	<% end %>

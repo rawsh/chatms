@@ -23,6 +23,35 @@
 
 
 /* General styles */
+.Categorypost {
+	border-bottom: 8px solid #AB18BC !important;
+}
+.Projectpost {
+	border-bottom: 8px solid #1895BC !important;	
+}
+.Ideapost {
+	border-bottom: 8px solid #BC5D18 !important;	
+}
+.Userpost {
+	border-bottom: 8px solid #5EBC18 !important;	
+}
+
+.category {
+	height:8px;
+	background-color: #AB18BC;
+}
+.project {
+	height:8px;
+	background-color: #1895BC;
+}
+.idea {
+	height:8px;
+	background-color: #BC5D18;
+}
+.user {
+	height:8px;
+	background-color: #5EBC18;	
+}
 
 
 body {

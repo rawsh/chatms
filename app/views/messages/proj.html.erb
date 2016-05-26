@@ -2,7 +2,7 @@
 	<div class="mcbox">
 	<% @messages.where(:article_type => "Project").each do |message| %>
 		<div class="post col-md-6">
-			<div class="message">
+			<div class="message Projectpost">
 				<%= link_to image_tag("white.png", :width => "25px"), message %>
 				<h2 class="message-title" style="margin-top: -25px;margin-left: 38px;"><%= message.title %></h2>
 				 
