@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
 	has_many :comments
 	
 	def self.search(search)
-	  where("username LIKE ?", "%#{search}%")
+	  where("LOWER(username) LIKE ? OR LOWER(description) LIKE ?", "%#{search}%", "%#{search}%")
 	end
 	
 	attr_accessor :login

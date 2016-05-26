@@ -3,7 +3,7 @@ class Message < ActiveRecord::Base
 	belongs_to :user
 	
 	def self.search(search)
-	  where("title LIKE ? OR description LIKE ?", "%#{search.downcase}%", "%#{search.downcase}%")
+	  where("LOWER(title) LIKE ? OR LOWER(description) LIKE ?", "%#{search}%", "%#{search}%")
 	end
 		
 	has_attached_file :image,
