@@ -1,28 +1,20 @@
-== README
+== ChatMS by Robert Washbourne
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My first large scale freelance project, I stumbled around a bit, but I think I did a good job. ChatMS is a forum/idea board where employees can add ideas. It has functionality of writing a post as a linked response. Login functionality, and user profiles are also implemented.
 
-Things you may want to cover:
+It is organized as follows:
 
-* Ruby version
+ * Categories are where projects are sorted into.
+ * Projects are sorted under categories.
+ * Ideas are under projects.
+ * Profiles are user profiles. All users can be seen on this page.
+ 
+ Pics:
+ 
+![](http://i.imgur.com/nMLVdQF.jpg)
 
-* System dependencies
+![](http://i.imgur.com/t3bdn5r.png)
 
-* Configuration
+![](http://i.imgur.com/nVQkUQy.png)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+![](http://i.imgur.com/OJa6Z60.png)
