@@ -4,13 +4,14 @@ My first large scale freelance project, I stumbled around a bit, but I think I d
 
 It is organized as follows:
 
- * Categories are where projects are sorted into.
- * Projects are sorted under categories.
- * Ideas are under projects.
- * Profiles are user profiles. All users can be seen on this page.
+* Categories are where projects are sorted into.
+* Projects are sorted under categories.
+* Ideas are under projects.
+* Profiles are user profiles. All users can be seen on this page.
+
  
- Pics:
- 
+Pics:
+
 ![](http://i.imgur.com/nMLVdQF.jpg)
 
 ![](http://i.imgur.com/t3bdn5r.png)
