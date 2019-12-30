@@ -2,6 +2,8 @@
 
 My first large scale freelance project, I stumbled around a bit, but I think I did a good job. ChatMS is a forum/idea board where employees can add ideas. It has functionality of writing a post as a linked response. Login functionality, and user profiles are also implemented.
 
+The company wanted a proof of concept.
+
 It is organized as follows:
 
 * Categories are where projects are sorted into.
